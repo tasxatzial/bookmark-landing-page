@@ -14,30 +14,30 @@
       <a href="index.html">
         <img src="img/logo-bookmark.svg" alt="bookmark logo">
       </a>
-      <nav aria-label="Primary">
-        <button class="btn">
-          <img src="img/icon-hamburger.svg" alt="hamburger icon">
+      <nav aria-label="primary">
+        <button class="hamburger-btn">
+          <img src="img/icon-hamburger.svg" alt="hamburger menu">
         </button>
         <div>
-          <ul class="nav-list">
-            <li>FEATURES</li>
-            <li>PRICING</li>
-            <li>CONTACT</li>
+          <ul aria-label="site navigation" class="nav-list">
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">CONTACT</a></li>
           </ul>
           <button class="btn btn--accent">LOGIN</button>
-          <ul>
-            <li><a href="https://facebook.com"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
-            <li><a href="https://twitter.com"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
+          <ul aria-label="social links">
+            <li><a href="https://facebook.com" aria-label="facebook"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
+            <li><a href="https://twitter.com" aria-label="twitter"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
   <main>
-    <section>
+    <section aria-labelledby="main-heading">
       <div class="primary-container">
         <div>
-          <h1>A Simple Bookmark Manager</h1>
+          <h1 id="main-heading">A Simple Bookmark Manager</h1>
           <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
           <div>
             <button class="btn btn--dark">Get it on Chrome</button>
@@ -49,16 +49,16 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="features" aria-labelledby="features-heading">
       <div class="primary-container">
         <div>
           <h2 id="features-heading">Features</h2>
           <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
         <div role="tablist" aria-labelledby="features-heading">
-          <button id="tab1-btn" class="tab-btn" role="tab" aria-selected="true" aria-controls="tabpanel1"><h3>Simple Bookmarking</h3></button>
-          <button id="tab2-btn" class="tab-btn" role="tab" aria-selected="false" aria-controls="tabpanel2"><h3>Speedy Searching</h3></button>
-          <button id="tab3-btn" class="tab-btn" role="tab" aria-selected="false" aria-controls="tabpanel3"><h3>Easy Sharing</h3></button>
+          <h3><button id="tab1-btn" class="tab-btn" role="tab" aria-selected="true" aria-controls="tabpanel1">Simple Bookmarking</button></h3>
+          <h3><button id="tab2-btn" class="tab-btn" role="tab" aria-selected="false" aria-controls="tabpanel2">Speedy Searching</button></h3>
+          <h3><button id="tab3-btn" class="tab-btn" role="tab" aria-selected="false" aria-controls="tabpanel3">Easy Sharing</button></h3>
           <div id="tabpanel1" role="tabpanel" tabindex="0" aria-labelledby="tab1-btn">
             <div>
               <img src="img/illustration-features-tab-1.svg" alt="">
@@ -92,10 +92,10 @@
         </div>
       </div>
     </section>
-    <section>
+    <section aria-labelledby="download-heading">
       <div class="primary-container">
         <div>
-          <h2>Download the extension</h2>
+          <h2 id="download-heading">Download the extension</h2>
           <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
         </div>
         <div>
@@ -123,9 +123,10 @@
         </div>
       </div>
     </section>
+    <section aria-labelledby="faq-heading">
       <div class="primary-container">
         <div>
-          <h2>Frequently asked questions</h2>
+          <h2 id="faq-heading">Frequently asked questions</h2>
           <p>Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
         </div>
         <div class="accordion">
@@ -176,36 +177,37 @@
         </div>
         <button class="btn btn--dark">More info</button>
       </div>
-    <section>
+    </section>
+    <section aria-labelledby="call-to-action-heading">
       <div class="primary-container">
         <p>35,000+ ALREADY JOINED</p>
-        <h2>Stay up-to-date with what we're doing</h2>
+        <h2 id="call-to-action-heading">Stay up-to-date with what we're doing</h2>
         <form action="#" method="POST">
           <input type="email">
-          <button>Contact us</button>
+          <button class="btn btn--accent">Contact us</button>
         </form>
       </div>
     </section>
-    <footer>
-      <div class="primary-container">
-        <a href="index.html">
-          <img src="img/logo-bookmark.svg" alt="bookmark logo">
-        </a>
-        <nav aria-label="primary">
-          <div>
-            <ul class="nav-list">
-              <li>FEATURES</li>
-              <li>PRICING</li>
-              <li>CONTACT</li>
-            </ul>
-            <ul>
-              <li><a href="https://facebook.com"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
-              <li><a href="https://twitter.com"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </footer>
   </main>
+  <footer>
+    <div class="primary-container">
+      <a href="index.html">
+        <img src="img/logo-bookmark.svg" alt="bookmark logo">
+      </a>
+      <nav aria-label="primary">
+        <div>
+          <ul class="nav-list" aria-label="site navigation">
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <ul aria-label="social links">
+            <li><a href="https://facebook.com" aria-label="facebook"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
+            <li><a href="https://twitter.com" aria-label="twitter"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>
