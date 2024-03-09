@@ -2,19 +2,28 @@ export default class Tablist {
   constructor(tabsContainer) {
     this.tabs = Array.from(tabsContainer.querySelectorAll('[role=tab]'));
     this.tabpanels = this.tabs.map(tab => document.getElementById(tab.getAttribute('aria-controls')));
-    this.selectedTab = this.tabs.filter(tab => tab.getAttribute('aria-selected') === 'true')[0];
+    this.openTabIndex = null;
+    for (let i = 0; i < this.tabs.length; i++) {
+      if (this.tabs[i].getAttribute('aria-selected') === 'true') {
+        this.openTabIndex = i;
+        break;
+      }
+    }
+    if (this.openTabIndex == null) {
+      throw new Error('No open tab found');
+    }
     tabsContainer.addEventListener('keydown', this.onKeyDown.bind(this));
     tabsContainer.addEventListener('click', this.onClick.bind(this));
   }
 
-  selectTab(tab) {
-    this.selectedTab.setAttribute('aria-selected', 'false');
-    this.selectedTab.tabIndex = -1;
-    this.tabpanels[this.selectedTab.getAttribute('data-index')].setAttribute('hidden', '');
-    tab.setAttribute('aria-selected', 'true');
-    tab.removeAttribute('tabindex');
-    this.tabpanels[tab.getAttribute('data-index')].removeAttribute('hidden');
-    this.selectedTab = tab;
+  selectTab(selectedTabIndex) {
+    this.tabs[this.openTabIndex].setAttribute('aria-selected', 'false');
+    this.tabs[this.openTabIndex].tabIndex = -1;
+    this.tabpanels[this.openTabIndex].setAttribute('hidden', '');
+    this.tabs[selectedTabIndex].setAttribute('aria-selected', 'true');
+    this.tabs[selectedTabIndex].removeAttribute('tabindex');
+    this.tabpanels[selectedTabIndex].removeAttribute('hidden');
+    this.openTabIndex = selectedTabIndex;
   }
 
   onKeyDown(e) {
@@ -25,11 +34,11 @@ export default class Tablist {
     if (!tab) {
       return;
     }
-    const tabIndex = tab.getAttribute('data-index');
+    const selectedTabIndex = this.tabs.indexOf(tab);
     const newTabIndex = (e.key === 'ArrowLeft')
-                        ? (tabIndex - 1 + this.tabs.length) % this.tabs.length
-                        : (tabIndex + 1) % this.tabs.length;
-    this.selectTab(this.tabs[newTabIndex]);
+                        ? (selectedTabIndex - 1 + this.tabs.length) % this.tabs.length
+                        : (selectedTabIndex + 1) % this.tabs.length;
+    this.selectTab(newTabIndex);
     this.tabs[newTabIndex].focus();
     e.preventDefault();
   }
@@ -39,8 +48,9 @@ export default class Tablist {
     if (!tab) {
       return;
     }
-    if (tab !== this.selectedTab) {
-      this.selectTab(tab);
+    const selectedTabIndex = this.tabs.indexOf(tab);
+    if (selectedTabIndex !== this.openTabIndex) {
+      this.selectTab(selectedTabIndex);
     }
   }
 }
