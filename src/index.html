@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bookmark landing page</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <script defer src="js/script.js" type="module"></script>
 </head>
 <body>
   <header>
@@ -55,35 +55,37 @@
           <h2 id="features-heading">Features</h2>
           <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
-        <div role="tablist" aria-labelledby="features-heading">
-          <h3><button id="tab1-btn" class="tab-btn" role="tab" aria-selected="true" aria-controls="tabpanel1">Simple Bookmarking</button></h3>
-          <h3><button id="tab2-btn" class="tab-btn" role="tab" aria-selected="false" aria-controls="tabpanel2">Speedy Searching</button></h3>
-          <h3><button id="tab3-btn" class="tab-btn" role="tab" aria-selected="false" aria-controls="tabpanel3">Easy Sharing</button></h3>
-          <div id="tabpanel1" role="tabpanel" tabindex="0" aria-labelledby="tab1-btn">
+        <div id="features-tablist" role="tablist" aria-labelledby="features-heading">
+          <div id="features-tabs">
+            <h3><button id="tab1-btn" class="tab-btn" role="tab" data-index="0" aria-selected="true" aria-controls="tabpanel1">Simple Bookmarking</button></h3>
+            <h3><button id="tab2-btn" class="tab-btn" tabindex="-1" role="tab" data-index="1" aria-selected="false" aria-controls="tabpanel2">Speedy Searching</button></h3>
+            <h3><button id="tab3-btn" class="tab-btn" tabindex="-1" role="tab" data-index="2" aria-selected="false" aria-controls="tabpanel3">Easy Sharing</button></h3>
+          </div>
+          <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1-btn">
             <div>
               <img src="img/illustration-features-tab-1.svg" alt="">
             </div>
-            <div>
+            <div tabindex="0">
               <h4>Bookmark in one click</h4>
               <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
               <button class="btn btn--dark">More Info</button>
             </div>
           </div>
-          <div id="tabpanel2" role="tabpanel" tabindex="-1" aria-labelledby="tab2-btn">
+          <div hidden id="tabpanel2" role="tabpanel" aria-labelledby="tab2-btn">
             <div>
               <img src="img/illustration-features-tab-2.svg" alt="">
             </div>
-            <div>
+            <div tabindex="0">
               <h4>Intelligent search</h4>
               <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
               <button class="btn btn--dark">More Info</button>
             </div>
           </div>
-          <div id="tabpanel3" role="tabpanel" tabindex="-1" aria-labelledby="tab3-btn">
+          <div hidden id="tabpanel3" role="tabpanel" aria-labelledby="tab3-btn">
             <div>
               <img src="img/illustration-features-tab-3.svg" alt="">
             </div>
-            <div>
+            <div tabindex="0">
               <h4>Share your bookmarks</h4>
               <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
               <button class="btn btn--dark">More Info</button>
