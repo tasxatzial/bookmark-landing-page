@@ -9,43 +9,47 @@
   <script defer src="js/script.js" type="module"></script>
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="primary-container">
-      <a href="index.html">
-        <img src="img/logo-bookmark.svg" alt="bookmark logo">
-      </a>
-      <nav aria-label="primary">
-        <button class="hamburger-btn">
-          <img src="img/icon-hamburger.svg" alt="hamburger menu">
-        </button>
-        <div>
-          <ul aria-label="site navigation" class="nav-list">
-            <li><a href="#features">FEATURES</a></li>
-            <li><a href="#">PRICING</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-          <button class="btn btn--accent">LOGIN</button>
-          <ul aria-label="social links">
-            <li><a href="https://facebook.com" aria-label="facebook"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
-            <li><a href="https://twitter.com" aria-label="twitter"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="header-content">
+        <a href="index.html">
+          <img src="img/logo-bookmark.svg" alt="bookmark logo">
+        </a>
+        <nav aria-label="primary">
+          <button class="hamburger-btn">
+            <img src="img/icon-hamburger.svg" alt="hamburger menu">
+          </button>
+          <div class="nav-menu">
+            <ul class="nav-list" aria-label="site navigation">
+              <li><a href="#features">FEATURES</a></li>
+              <li><a href="#">PRICING</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+            <button class="btn btn--accent">LOGIN</button>
+            <ul class="social-links-list" aria-label="social links">
+              <li><a href="https://facebook.com" aria-label="facebook"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
+              <li><a href="https://twitter.com" aria-label="twitter"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
     <section aria-labelledby="main-heading">
       <div class="primary-container">
-        <div>
-          <h1 id="main-heading">A Simple Bookmark Manager</h1>
-          <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="landing-section">
           <div>
-            <button class="btn btn--dark">Get it on Chrome</button>
-            <button class="btn btn--light">Get it on Firefox</button>
+            <h1 id="main-heading">A Simple Bookmark Manager</h1>
+            <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+            <div>
+              <button class="btn btn--dark">Get it on Chrome</button>
+              <button class="btn btn--light">Get it on Firefox</button>
+            </div>
           </div>
-        </div>
-        <div>
-          <img src="img/illustration-hero.svg" alt="">
+          <div>
+            <img src="img/illustration-hero.svg" alt="">
+          </div>
         </div>
       </div>
     </section>
@@ -184,7 +188,7 @@
       <div class="primary-container">
         <p>35,000+ ALREADY JOINED</p>
         <h2 id="call-to-action-heading">Stay up-to-date with what we're doing</h2>
-        <form action="#" method="POST">
+        <form action="#" method="POST" class="contact-form">
           <input type="email">
           <button class="btn btn--accent">Contact us</button>
         </form>
@@ -196,18 +200,16 @@
       <a href="index.html">
         <img src="img/logo-bookmark.svg" alt="bookmark logo">
       </a>
-      <nav aria-label="primary">
-        <div>
-          <ul class="nav-list" aria-label="site navigation">
-            <li><a href="#features">FEATURES</a></li>
-            <li><a href="#">PRICING</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-          <ul aria-label="social links">
-            <li><a href="https://facebook.com" aria-label="facebook"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
-            <li><a href="https://twitter.com" aria-label="twitter"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
-          </ul>
-        </div>
+      <nav class="nav-menu" aria-label="primary">
+        <ul class="nav-list" aria-label="site navigation">
+          <li><a href="#features">FEATURES</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+        <ul class="social-links-list" aria-label="social links">
+          <li><a href="https://facebook.com" aria-label="facebook"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
+          <li><a href="https://twitter.com" aria-label="twitter"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
+        </ul>
       </nav>
     </div>
   </footer>
