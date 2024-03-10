@@ -6,12 +6,12 @@
   --fs-500: 1.3rem;
   --fs-600: 1.5rem;
   --fs-700: 1.9rem;
-  --opaque-55: 0.55;
-  --opaque-70: 0.7;
   --letter-spaced-200: 0.1em;
   --letter-spaced-400: 0.2em;
   --line-height-400: 1.35;
   --line-height-500: 1.65;
+  --neutral-light: hsl(229, 8%, 60%);
+  --neutral-dark: hsl(229, 31%, 21%);
 }
 
 body {
@@ -50,7 +50,7 @@ img {
   font-size: var(--fs-300);
   font-weight: var(--fw-reg);
   line-height: var(--line-height-500);
-  opacity: var(--opaque-55);
+  color: var(--neutral-light);
 }
 
 .heading {
@@ -102,7 +102,7 @@ img {
 
 .card__min-browser {
   font-size: var(--fs-300);
-  opacity: var(--opaque-55);
+  color: var(--neutral-light);
 }
 
 .cta__form {
@@ -132,10 +132,12 @@ img {
 }
 
 .tab-btn {
-  opacity: var(--opaque-70);
+  color: var(--neutral-dark);
+  opacity: 0.7;
 }
 
 .faq-answer {
+  color: var(--neutral-dark);
   font-size: var(--fs-300);
-  opacity: var(--opaque-70);
+  opacity: 0.7;
 }
