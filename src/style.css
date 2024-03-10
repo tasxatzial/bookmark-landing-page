@@ -10,8 +10,8 @@
   --letter-spaced-400: 0.2em;
   --line-height-400: 1.35;
   --line-height-500: 1.65;
-  --neutral-light: hsl(229, 8%, 60%);
-  --neutral-dark: hsl(229, 31%, 21%);
+  --color-neutral: hsl(224, 6%, 47%);
+  --color-neutral-dark: hsl(229, 31%, 21%);
   --primary-dark: hsl(231, 69%, 60%);
   --primary-accent: hsl(0, 94%, 66%);
 }
@@ -52,7 +52,7 @@ img {
   font-size: var(--fs-300);
   font-weight: var(--fw-reg);
   line-height: var(--line-height-500);
-  color: var(--neutral-light);
+  color: var(--color-neutral);
 }
 
 .heading {
@@ -104,7 +104,7 @@ img {
 
 .card__min-browser {
   font-size: var(--fs-300);
-  color: var(--neutral-light);
+  color: var(--color-neutral);
 }
 
 .cta__form {
@@ -132,18 +132,19 @@ img {
 }
 
 .btn--dark {
-  color: white;
   background-color: var(--primary-dark);
+  color: white;
 }
 
 .btn--light {
   background-color: hsl(0, 0%, 95%);
-  box-shadow: 0px 1px 7px -3px rgba(0,0,0,0.75)
+  box-shadow: 0px 1px 7px -3px rgba(0,0,0,0.75);
+  color: var(--color-neutral-dark);
 }
 
 .btn--accent {
-  color: white;
   background-color: var(--primary-accent);
+  color: white;
 }
 
 .faq-btn,
@@ -151,13 +152,19 @@ img {
   font-size: var(--fs-300);
 }
 
-.tab-btn {
-  color: var(--neutral-dark);
-  opacity: 0.7;
+.faq-answer {
+  color: var(--color-neutral);
+  font-size: var(--fs-300);
 }
 
-.faq-answer {
-  color: var(--neutral-dark);
-  font-size: var(--fs-300);
-  opacity: 0.7;
+.accordion-title,
+.faq-heading,
+.cta-heading,
+.card-heading,
+.download-heading,
+.features-heading,
+.primary-heading,
+.tab-btn,
+.tab-subheading {
+  color: var(--color-neutral-dark);
 }
