@@ -1,8 +1,9 @@
 :root {
   --fw-reg: 400;
   --fw-semi-bold: 500;
-  --fs-200: 0.875rem;
-  --fs-300: 0.95rem;
+  --fs-100: 0.875rem;
+  --fs-200: 0.9375rem;
+  --fs-300: 1rem;
   --fs-500: 1.3rem;
   --fs-600: 1.5rem;
   --fs-700: 1.9rem;
@@ -77,14 +78,10 @@ img {
   padding: 0;
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
-
 .primary-container {
   margin: auto;
   max-width: 68.75rem;
-  padding-inline: 2rem;
+  padding-inline: 1.5rem;
 }
 
 .header .nav-menu {
@@ -117,7 +114,7 @@ img {
 }
 
 .cta__intro {
-  font-size: var(--fs-200);
+  font-size: var(--fs-100);
   font-weight: var(--fw-semi-bold);
   letter-spacing: var(--letter-spaced-400);
   text-transform: uppercase;
@@ -126,9 +123,9 @@ img {
 .btn {
   border: none;
   border-radius: 4px;
-  font-size: var(--fs-300);
+  font-size: var(--fs-200);
   font-weight: 500;
-  padding: 0.8em 1em;
+  padding: 0.75em 1.1em;
 }
 
 .btn--dark {
