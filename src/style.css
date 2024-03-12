@@ -33,6 +33,10 @@ body.js-no-scroll {
   height: 100%;
 }
 
+.js-nav-open .header {
+  --logo-color: white;
+}
+
 .js-nav-open .header .nav-menu {
   background-color: var(--color-neutral-dark);
   visibility: visible;
@@ -123,6 +127,10 @@ img {
 .heading-3 {
   font-size: var(--fs-500);
   line-height: var(--line-height-400);
+}
+
+.site-logo-link {
+  display: inline-flex;
 }
 
 /*------------------------------------*\
