@@ -33,17 +33,12 @@ body.js-no-scroll {
   height: 100%;
 }
 
-.js-nav-open .header {
-  --logo-color: white;
-  background-color: var(--color-neutral-dark);
-  opacity: 95%;
-}
-
 .js-nav-open .header .nav-menu {
   background-color: var(--color-neutral-dark);
   visibility: visible;
-  opacity: 1;
+  opacity: 95%;
 }
+
 /*------------------------------------*\
   #DEFAULTS
 \*------------------------------------*/
@@ -162,6 +157,11 @@ img {
   #HEADER
 \*------------------------------------*/
 
+.header {
+  position: relative;
+  isolation: isolate;
+}
+
 .header-content {
   --header-padding: 1rem;
   --header-height: calc(var(--header-padding) + 3rem);
@@ -184,13 +184,14 @@ img {
   color: white;
   display: flex;
   flex-direction: column;
-  inset: var(--header-height) 0 0 0;
-  padding: var(--primary-padding);
+  inset: 0 0 0 0;
+  padding: calc(1rem + var(--header-height)) var(--primary-padding) 0 var(--primary-padding);
   position: fixed;
   text-align: center;
   text-transform: uppercase;
   visibility: hidden;
   width: 100%;
+  z-index: -1;
 }
 
 .header .site-links > li {
