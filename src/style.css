@@ -234,6 +234,11 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: auto;
+  margin-bottom: 1.5rem;
+}
+
+.header .social-links > li {
+  display: inline-flex;
 }
 
 .header .social-link {
