@@ -183,9 +183,12 @@ img {
 }
 
 .toggle-nav-btn {
+  --padding: 0.5rem;
   border: none;
   background-color: transparent;
-  padding: 0.5rem;
+  left: var(--padding);
+  padding: var(--padding);
+  position: relative;
 }
 
 .header .nav-menu {
