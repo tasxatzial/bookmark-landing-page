@@ -7,17 +7,25 @@ const tablist = new Tablist(tabsContainer);
 const accordionContainer = document.getElementById('faq-accordion');
 const accordion = new Accordion(accordionContainer);
 
-const primaryNav = document.querySelector("nav[aria-label='primary']");
-const toggleNavBtn = primaryNav.querySelector('.toggle-nav-btn');
-const twitterLink = primaryNav.querySelector("a[aria-label='twitter']");
+const headerNav = document.querySelector("nav[aria-label='primary']");
+const toggleNavBtn = headerNav.querySelector('.toggle-nav-btn');
+const twitterLink = headerNav.querySelector("a[aria-label='twitter']");
 const mqList = window.matchMedia("(min-width: 45em)");
+const headerNavLinks = headerNav.querySelector('.site-links');
+
 let navShouldBeOpen = false;
 
 toggleNavBtn.addEventListener('click', toggleNav);
 mqList.addEventListener('change', toggleNavOnResize);
 
 /* trap keyboard navigation inside menu when it is open */
-primaryNav.addEventListener('keydown', navigateMenu);
+headerNav.addEventListener('keydown', navigateMenu);
+
+headerNavLinks.addEventListener('click', (e) => {
+    if (e.target.closest('a')) {
+        closeNav();
+    }
+});
 
 function navigateMenu(event) {
     if (!document.body.classList.contains('js-nav-open')) {
