@@ -127,6 +127,7 @@ svg {
   font-size: var(--fs-600);
   font-weight: var(--fw-semi-bold);
   line-height: var(--line-height-300);
+  margin-bottom: 0.5em;
 }
 
 .card__heading {
@@ -322,7 +323,7 @@ svg {
 \*------------------------------------*/
 
 .hero-section {
-  padding-bottom: 7rem;
+  padding-bottom: 3rem;
   padding-top: 4rem;
   text-align: center;
 }
@@ -344,6 +345,7 @@ svg {
   position: absolute;
   right: calc(-1 * var(--primary-padding));
   top: calc(16% + 0.3rem);
+  z-index: -1;
 }
 
 .hero-btns-container {
@@ -352,6 +354,41 @@ svg {
   gap: 1rem;
   justify-content: center;
 }
+
+/*------------------------------------*\
+  #FEATURES SECTION
+\*------------------------------------*/
+
+.features-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.tab-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0.75em;
+}
+
+.feature-tab-heading {
+  --border: 1px solid rgba(95, 106, 134, 0.481);
+  border-bottom: var(--border);
+}
+
+.feature-tab-heading:first-child {
+  border-top: var(--border);
+}
+
+.features-tabs {
+  margin-bottom: 2rem;
+}
+
+.feature-img {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
 
 /*------------------------------------*\
   #FOOTER
