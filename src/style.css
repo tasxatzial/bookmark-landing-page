@@ -58,7 +58,7 @@ input {
   font-family: inherit;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,p {
   margin: 0;
 }
 
@@ -105,16 +105,18 @@ svg {
 \*------------------------------------*/
 
 .regular-text {
+  color: var(--color-neutral);
   font-size: var(--fs-300);
   font-weight: var(--fw-reg);
   line-height: var(--line-height-600);
-  color: var(--color-neutral);
+  margin-bottom: 2em;
 }
 
 .hero-heading {
   font-size: var(--fs-700);
   font-weight: var(--fw-semi-bold);
   line-height: var(--line-height-300);
+  margin-bottom: 0.5em;
 }
 
 .features-heading,
@@ -176,7 +178,7 @@ svg {
 
 .header {
   position: relative;
-  isolation: isolate;
+  z-index: 10;
 }
 
 .header .site-logo-link {
@@ -316,6 +318,42 @@ svg {
 }
 
 /*------------------------------------*\
+  #HERO SECTION
+\*------------------------------------*/
+
+.hero-section {
+  padding-bottom: 7rem;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.hero-image {
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.hero-image-container {
+  position: relative;
+}
+
+.hero-image-background {
+  background-color: var(--color-primary-dark);
+  border-bottom-left-radius: 28%;
+  bottom: 4.5rem;
+  left: calc(15% + 1.5rem);
+  position: absolute;
+  right: calc(-1 * var(--primary-padding));
+  top: calc(16% + 0.3rem);
+}
+
+.hero-btns-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/*------------------------------------*\
   #FOOTER
 \*------------------------------------*/
 
@@ -358,7 +396,3 @@ svg {
   font-size: var(--fs-300);
 }
 
-.faq-answer {
-  color: var(--color-neutral);
-  font-size: var(--fs-300);
-}
