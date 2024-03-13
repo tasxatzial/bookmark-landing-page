@@ -62,7 +62,8 @@ h1,h2,h3,h4 {
   margin: 0;
 }
 
-img {
+img,
+svg {
   display: block;
   font-style: italic;
   height: auto;
@@ -176,6 +177,10 @@ img {
 .header {
   position: relative;
   isolation: isolate;
+}
+
+.header .site-logo-link {
+  flex-shrink: 2;
 }
 
 .header-content {
