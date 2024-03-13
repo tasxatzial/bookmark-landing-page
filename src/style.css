@@ -373,6 +373,46 @@ svg {
   margin-bottom: 2rem;
 }
 
+/*------------------------------------*\
+  #DOWNLOAD SECTION
+\*------------------------------------*/
+
+.download-section {
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 1em;
+  padding-top: 2em;
+  max-width: 24ch;
+}
+
+.card-browser-logo {
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.card-button {
+  margin-top: 1em;
+}
+
+.download-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/*------------------------------------*\
+  #FAQ SECTION
+\*------------------------------------*/
+
 
 /*------------------------------------*\
   #FOOTER
