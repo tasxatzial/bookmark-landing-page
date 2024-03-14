@@ -470,7 +470,8 @@ svg {
   width: 100%;
 }
 
-.faq-question-btn[aria-expanded='true'] > img {
+.faq-question-btn[aria-expanded='true'] > svg {
+  --arrow-color: var(--color-primary-accent);
   transform: rotate(180deg);
 }
 
