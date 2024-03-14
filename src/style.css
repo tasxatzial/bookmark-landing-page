@@ -42,9 +42,9 @@ body.js-no-scroll {
 }
 
 .js-nav-open .header .nav-menu {
-  background-color: var(--color-neutral-dark);
-  visibility: visible;
   opacity: 95%;
+  transition: opacity 150ms;
+  visibility: visible;
 }
 
 .js-open-faq-answer.faq-answer-content {
@@ -231,10 +231,12 @@ svg {
 }
 
 .header .nav-menu {
+  background-color: var(--color-neutral-dark);
   color: white;
   display: flex;
   flex-direction: column;
   inset: 0;
+  opacity: 0%;
   padding: calc(1rem + var(--header-height)) var(--primary-padding) 0 var(--primary-padding);
   position: fixed;
   text-align: center;
@@ -305,6 +307,7 @@ svg {
     flex-wrap: nowrap;
     font-size: var(--fs-100);
     letter-spacing: var(--letter-spaced-200);
+    opacity: 100%;
     padding: 0;
     text-transform: uppercase;
     visibility: visible;
