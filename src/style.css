@@ -364,9 +364,22 @@ svg {
 }
 
 .feature-tab-btn {
+  --tab-btn-padding: 0.75em;
   background-color: transparent;
   border: none;
-  padding: 0.75em;
+  position: relative;
+  padding: var(--tab-btn-padding);
+}
+
+.feature-tab-btn[aria-selected="true"]::after {
+  background-color: var(--color-primary-accent);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.25em;
+  left: calc(var(--tab-btn-padding) + 5%);
+  position: absolute;
+  right: calc(var(--tab-btn-padding) + 5%);
 }
 
 .feature-tab-heading {
