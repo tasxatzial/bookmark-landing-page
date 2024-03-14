@@ -58,6 +58,10 @@ input {
   font-family: inherit;
 }
 
+button {
+  display: inline-block;
+}
+
 h1,h2,h3,h4,p {
   margin: 0;
 }
@@ -413,6 +417,52 @@ svg {
   #FAQ SECTION
 \*------------------------------------*/
 
+.faq-section {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.faq-container {
+  max-width: 52ch;
+  margin: 0 auto;
+}
+
+.faq-heading,
+.faq-intro-text {
+  text-align: center;
+}
+
+.faq-more-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.faq-question-btn {
+  align-items: center;
+  background: transparent;
+  border: none;
+  display: inline-flex;
+  font-size: var(--fs-300);
+  gap: 1em;
+  justify-content: space-between;
+  line-height: var(--line-height-400);
+  padding: 1em 0;
+  width: 100%;
+}
+
+.faq-accordion {
+  --border: 1px solid rgba(95, 106, 134, 0.481);
+  margin-bottom: 2rem;
+}
+
+.faq-accordion-panel:first-child {
+  border-top: var(--border);
+}
+
+.faq-accordion-panel {
+  border-bottom: var(--border);
+}
+
 
 /*------------------------------------*\
   #FOOTER
@@ -453,7 +503,5 @@ svg {
   text-transform: uppercase;
 }
 
-.faq-btn {
-  font-size: var(--fs-300);
-}
+
 

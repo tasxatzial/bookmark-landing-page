@@ -141,59 +141,61 @@
         </ul>
       </div>
     </section>
-    <section aria-labelledby="faq-heading">
+    <section class="faq-section" aria-labelledby="faq-heading">
       <div class="primary-container">
-        <div>
-          <h2 id="faq-heading" class="faq-heading color-neutral-dark">Frequently Asked Questions</h2>
-          <p class="regular-text">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+        <div class="faq-container">
+          <div>
+            <h2 id="faq-heading" class="faq-heading color-neutral-dark">Frequently Asked Questions</h2>
+            <p class="regular-text faq-intro-text">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
+          </div>
+          <div id="faq-accordion" class="faq-accordion">
+            <div class="faq-accordion-panel">
+              <h3 id="faq-panel1-heading">
+                <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-panel1-content">
+                  <span class="color-neutral-dark">What is Bookmark?</span>
+                  <img src="img/icon-arrow.svg" alt="">
+                </button>
+              </h3>
+              <div hidden id="faq-panel1-content" role="region" aria-labelledby="faq-panel1-heading">
+                <p class="regular-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+              </div>
+            </div>
+            <div class="faq-accordion-panel">
+              <h3 id="faq-panel2-heading">
+                <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-panel2-content">
+                  <span class="color-neutral-dark">How can I request a new browser?</span>
+                  <img src="img/icon-arrow.svg" alt="">
+                </button>
+              </h3>
+              <div hidden id="faq-panel2-content" role="region" aria-labelledby="faq-panel2-heading">
+                <p class="regular-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+              </div>
+            </div>
+            <div class="faq-accordion-panel">
+              <h3 id="faq-panel3-heading">
+                <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-panel3-content">
+                  <span class="color-neutral-dark">Is there a mobile app?</span>
+                  <img src="img/icon-arrow.svg" alt="">
+                </button>
+              </h3>
+              <div hidden id="faq-panel3-content" role="region" aria-labelledby="faq-panel3-heading">
+                <p class="regular-text">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
+              </div>
+            </div>
+            <div class="faq-accordion-panel">
+              <h3 id="faq-panel4-heading">
+                <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-panel4-content">
+                  <span class="faq-question">What about other Chromium browsers?</span>
+                  <img src="img/icon-arrow.svg" alt="">
+                </button>
+              </h3>
+              <div hidden id="faq-panel4-content" role="region" aria-labelledby="faq-panel4-heading">
+                <p class="regular-text">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--dark faq-more-btn">More info</button>
         </div>
-        <div id="faq-accordion" class="accordion">
-          <div class="accordion-panel">
-            <h3 id="panel1-heading">
-              <button class="faq-btn" aria-expanded="false" aria-controls="panel1-content">
-                <span class="color-neutral-dark">What is Bookmark?</span>
-                <img src="img/icon-arrow.svg" alt="">
-              </button>
-            </h3>
-            <div hidden id="panel1-content" role="region" aria-labelledby="panel1-heading">
-              <p class="regular-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
-            </div>
-          </div>
-          <div class="accordion-panel">
-            <h3 id="panel2-heading">
-              <button class="faq-btn" aria-expanded="false" aria-controls="panel2-content">
-                <span class="color-neutral-dark">How can I request a new browser?</span>
-                <img src="img/icon-arrow.svg" alt="">
-              </button>
-            </h3>
-            <div hidden id="panel2-content" role="region" aria-labelledby="panel2-heading">
-              <p class="regular-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-            </div>
-          </div>
-          <div class="accordion-panel">
-            <h3 id="panel3-heading">
-              <button class="faq-btn" aria-expanded="false" aria-controls="panel3-content">
-                <span class="color-neutral-dark">Is there a mobile app?</span>
-                <img src="img/icon-arrow.svg" alt="">
-              </button>
-            </h3>
-            <div hidden id="panel3-content" role="region" aria-labelledby="panel3-heading">
-              <p class="regular-text">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
-            </div>
-          </div>
-          <div class="accordion-panel">
-            <h3 id="panel4-heading">
-              <button class="faq-btn" aria-expanded="false" aria-controls="panel4-content">
-                <span class="faq-question">What about other Chromium browsers?</span>
-                <img src="img/icon-arrow.svg" alt="">
-              </button>
-            </h3>
-            <div hidden id="panel4-content" role="region" aria-labelledby="panel4-heading">
-              <p class="regular-text">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
-            </div>
-          </div>
-        </div>
-        <button class="btn btn--dark">More info</button>
       </div>
     </section>
     <section aria-labelledby="cta-heading">
