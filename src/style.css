@@ -457,6 +457,10 @@ svg {
   width: 100%;
 }
 
+.faq-question-btn[aria-expanded='true'] > img {
+  transform: rotate(180deg);
+}
+
 .faq-accordion {
   margin-bottom: 3rem;
 }
