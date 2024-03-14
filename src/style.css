@@ -509,10 +509,38 @@ svg {
 /*------------------------------------*\
   #FOOTER
 \*------------------------------------*/
+.footer {
+  --logo-color: white;
+  background-color: var(--color-neutral-dark);
+  color: white;
+  text-align: center;
+}
+
+.footer .site-logo-link {
+  margin-bottom: 1rem;
+}
+
+.footer .site-link {
+  display: inline-block;
+  letter-spacing: var(--letter-spaced-200);
+  padding: 1rem;
+  text-transform: uppercase;
+}
 
 .footer-content {
+  padding: 2rem 0 1rem;
+}
+
+.footer .social-links {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .social-link {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
 /*------------------------------------*\
