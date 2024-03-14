@@ -11,12 +11,12 @@ export default class Accordion {
 
   _openPanel(button) {
     button.setAttribute('aria-expanded', 'true');
-    this.buttons.get(button).removeAttribute('hidden');
+    this.buttons.get(button).classList.add('js-open-faq-answer');
   }
 
   _closePanel(button) {
     button.setAttribute('aria-expanded', 'false');
-    this.buttons.get(button).setAttribute('hidden', '');
+    this.buttons.get(button).classList.remove('js-open-faq-answer');
   }
 
   isPanelOpen(button) {
