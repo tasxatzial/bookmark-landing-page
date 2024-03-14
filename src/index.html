@@ -25,13 +25,13 @@
             <img src="img/icon-hamburger.svg" alt="open menu icon">
           </button>
           <div id="primary-nav-menu" class="nav-menu">
-            <ul class="site-links unstyled-list" aria-label="site navigation">
+            <ul class="site-links list" aria-label="site navigation">
               <li><a href="#features" class="link site-link">Features</a></li>
               <li><a href="#" class="link site-link">Pricing</a></li>
               <li><a href="#" class="link site-link">Contact</a></li>
             </ul>
-            <button class="btn btn--accent btn--login">Login</button>
-            <ul class="social-links unstyled-list" aria-label="social links">
+            <button class="btn btn-accent btn-login">Login</button>
+            <ul class="social-links list" aria-label="social links">
               <li><a href="https://facebook.com" class="social-link" aria-label="facebook"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
               <li><a href="https://twitter.com" class="social-link" aria-label="twitter"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
             </ul>
@@ -41,15 +41,15 @@
     </div>
   </header>
   <main>
-    <section class="hero-section" aria-labelledby="hero-heading">
+    <section class="hero-section top-lvl-section" aria-labelledby="hero-heading">
       <div class="primary-container">
-        <div class="hero-section-content">
+        <div class="hero-section-content section-container">
           <div>
             <h1 id="hero-heading" class="hero-heading color-neutral-dark">A Simple Bookmark Manager</h1>
             <p class="regular-text">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-            <div class="hero-btns-container">
-              <button class="btn btn--dark">Get it on Chrome</button>
-              <button class="btn btn--light">Get it on Firefox</button>
+            <div class="hero-btns">
+              <button class="btn btn-dark">Get it on Chrome</button>
+              <button class="btn btn-light">Get it on Firefox</button>
             </div>
           </div>
           <div class="hero-image-container">
@@ -59,91 +59,107 @@
         </div>
       </div>
     </section>
-    <section id="features" class="features-section" aria-labelledby="features-heading">
+    <section id="features" class="features-section top-lvl-section" aria-labelledby="features-heading">
       <div class="primary-container">
-        <div>
-          <h2 id="features-heading" class="features-heading color-neutral-dark">Features</h2>
-          <p class="regular-text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
-        </div>
-        <div id="features-tablist" role="tablist" aria-labelledby="features-heading">
-          <div id="features-tabs" class="features-tabs">
-            <h3 class="feature-tab-heading"><button id="tab1-btn" class="tab-btn color-neutral-dark" role="tab" aria-selected="true" aria-controls="tabpanel1">Simple Bookmarking</button></h3>
-            <h3 class="feature-tab-heading"><button id="tab2-btn" class="tab-btn color-neutral-dark" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel2">Speedy Searching</button></h3>
-            <h3 class="feature-tab-heading"><button id="tab3-btn" class="tab-btn color-neutral-dark" tabindex="-1" role="tab" aria-selected="false" aria-controls="tabpanel3">Easy Sharing</button></h3>
+        <div class="section-container">
+          <div>
+            <h2 id="features-heading" class="features-heading color-neutral-dark">Features</h2>
+            <p class="regular-text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
           </div>
-          <div id="tabpanel1" role="tabpanel" aria-labelledby="tab1-btn">
-            <div>
-              <img src="img/illustration-features-tab-1.svg" alt="" class="feature-img">
+          <div id="features-tablist" role="tablist" aria-labelledby="features-heading">
+            <div id="features-tabs" class="features-tabs">
+              <h3 class="feature-tab-heading"><button id="features-tab1-btn" class="feature-tab-btn color-neutral-dark" role="tab" aria-selected="true" aria-controls="features-tabpanel1">Simple Bookmarking</button></h3>
+              <h3 class="feature-tab-heading"><button id="features-tab2-btn" class="feature-tab-btn color-neutral-dark" tabindex="-1" role="tab" aria-selected="false" aria-controls="features-tabpanel2">Speedy Searching</button></h3>
+              <h3 class="feature-tab-heading"><button id="features-tab3-btn" class="feature-tab-btn color-neutral-dark" tabindex="-1" role="tab" aria-selected="false" aria-controls="features-tabpanel3">Easy Sharing</button></h3>
             </div>
-            <div tabindex="0">
-              <h3 class="feature-panel-heading color-neutral-dark">Bookmark in one click</h3>
-              <p class="regular-text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-              <button class="btn btn--dark">More Info</button>
+            <div id="features-tabpanel1" role="tabpanel" aria-labelledby="features-tab1-btn">
+              <div>
+                <img src="img/illustration-features-tab-1.svg" alt="" class="feature-main-img">
+              </div>
+              <div tabindex="0">
+                <h3 class="feature-panel-heading color-neutral-dark">Bookmark in one click</h3>
+                <p class="regular-text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                <button class="btn btn-dark">More Info</button>
+              </div>
             </div>
-          </div>
-          <div hidden id="tabpanel2" role="tabpanel" aria-labelledby="tab2-btn">
-            <div>
-              <img src="img/illustration-features-tab-2.svg" alt="" class="feature-img">
+            <div hidden id="features-tabpanel2" role="tabpanel" aria-labelledby="features-tab2-btn">
+              <div>
+                <img src="img/illustration-features-tab-2.svg" alt="" class="feature-main-img">
+              </div>
+              <div tabindex="0">
+                <h3 class="feature-panel-heading color-neutral-dark">Intelligent search</h3>
+                <p class="regular-text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                <button class="btn btn-dark">More Info</button>
+              </div>
             </div>
-            <div tabindex="0">
-              <h3 class="feature-panel-heading color-neutral-dark">Intelligent search</h3>
-              <p class="regular-text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-              <button class="btn btn--dark">More Info</button>
-            </div>
-          </div>
-          <div hidden id="tabpanel3" role="tabpanel" aria-labelledby="tab3-btn">
-            <div>
-              <img src="img/illustration-features-tab-3.svg" alt="" class="feature-img">
-            </div>
-            <div tabindex="0">
-              <h3 class="feature-panel-heading color-neutral-dark">Share your bookmarks</h3>
-              <p class="regular-text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-              <button class="btn btn--dark">More Info</button>
+            <div hidden id="features-tabpanel3" role="tabpanel" aria-labelledby="features-tab3-btn">
+              <div>
+                <img src="img/illustration-features-tab-3.svg" alt="" class="feature-main-img">
+              </div>
+              <div tabindex="0">
+                <h3 class="feature-panel-heading color-neutral-dark">Share your bookmarks</h3>
+                <p class="regular-text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                <button class="btn btn-dark">More Info</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="download-section" aria-labelledby="download-heading">
+    <section class="download-section top-lvl-section" aria-labelledby="download-heading">
       <div class="primary-container">
-        <div>
-          <h2 id="download-heading" class="download-heading color-neutral-dark">Download the extension</h2>
-          <p class="regular-text">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+        <div class="section-container">
+          <div>
+            <h2 id="download-heading" class="download-heading color-neutral-dark">Download the extension</h2>
+            <p class="regular-text">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+          </div>
+          <ul class="list download-cards" aria-label="supported browsers">
+            <li>
+              <article class="download-card">
+                <div class="download-card-top">
+                  <img src="img/logo-chrome.svg" alt="chrome logo" class="download-card-browser-logo">
+                  <h3 class="card-heading color-neutral-dark">Add to Chrome</h3>
+                  <p class="card-min-browser regular-text">Minimum version 62</p>
+                </div>
+                <img src="img/bg-dots.svg" alt="">
+                <div class="download-card-bottom">
+                  <button class="btn btn-dark download-card-button">Add & Install Extension</button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="download-card">
+                <div class="download-card-top">
+                  <img src="img/logo-firefox.svg" alt="chrome logo" class="download-card-browser-logo">
+                  <h3 class="card-heading color-neutral-dark">Add to Firefox</h3>
+                  <p class="card-min-browser regular-text">Minimum version 55</p>
+                </div>
+                <img src="img/bg-dots.svg" alt="">
+                <div class="download-card-bottom">
+                  <button class="btn btn-dark download-card-button">Add & Install Extension</button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="download-card">
+                <div class="download-card-top">
+                  <img src="img/logo-opera.svg" alt="chrome logo" class="download-card-browser-logo">
+                  <h3 class="card-heading color-neutral-dark">Add to Opera</h3>
+                  <p class="card-min-browser regular-text">Minimum version 46</p>
+                </div>
+                <img src="img/bg-dots.svg" alt="">
+                <div class="download-card-bottom">
+                  <button class="btn btn-dark download-card-button">Add & Install Extension</button>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
-        <ul class="unstyled-list download-cards" aria-label="supported browsers">
-          <li>
-            <article class="card">
-              <img src="img/logo-chrome.svg" alt="chrome logo" class="card-browser-logo">
-              <h3 class="card__heading color-neutral-dark">Add to Chrome</h3>
-              <p class="card__min-browser regular-text">Minimum version 62</p>
-              <img src="img/bg-dots.svg" alt="" class="card-dots-img">
-              <button class="btn btn--dark card-button">Add & Install Extension</button>
-            </article>
-          </li>
-          <li>
-            <article class="card">
-              <img src="img/logo-firefox.svg" alt="chrome logo" class="card-browser-logo">
-              <h3 class="card__heading color-neutral-dark">Add to Firefox</h3>
-              <p class="card__min-browser regular-text">Minimum version 55</p>
-              <img src="img/bg-dots.svg" alt="" class="card-dots-img">
-              <button class="btn btn--dark card-button">Add & Install Extension</button>
-            </article>
-          </li>
-          <li>
-            <article class="card">
-              <img src="img/logo-opera.svg" alt="chrome logo" class="card-browser-logo">
-              <h3 class="card__heading color-neutral-dark">Add to Opera</h3>
-              <p class="card__min-browser regular-text">Minimum version 46</p>
-              <img src="img/bg-dots.svg" alt="" class="card-dots-img">
-              <button class="btn btn--dark card-button">Add & Install Extension</button>
-            </article>
-          </li>
-        </ul>
       </div>
     </section>
-    <section class="faq-section" aria-labelledby="faq-heading">
+    <section class="faq-section top-lvl-section" aria-labelledby="faq-heading">
       <div class="primary-container">
-        <div class="faq-container">
+        <div class="section-container">
           <div>
             <h2 id="faq-heading" class="faq-heading color-neutral-dark">Frequently Asked Questions</h2>
             <p class="regular-text faq-intro-text">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
@@ -194,18 +210,18 @@
               </div>
             </div>
           </div>
-          <button class="btn btn--dark faq-more-btn">More info</button>
+          <button class="btn btn-dark faq-more-btn">More info</button>
         </div>
       </div>
     </section>
-    <section class="cta-section" aria-labelledby="cta-heading">
+    <section class="cta-section top-lvl-section" aria-labelledby="cta-heading">
       <div class="primary-container">
-        <div class="cta-container">
+        <div class="section-container">
           <p class="cta-intro">35,000+ Already Joined</p>
           <h2 id="cta-heading" class="cta-heading">Stay up-to-date with what we're doing</h2>
           <form action="#" method="POST" class="cta-form">
             <input type="email" placeholder="Enter your email address" class="cta-email-input">
-            <button class="btn btn--accent">Contact us</button>
+            <button class="btn btn-accent">Contact us</button>
           </form>
         </div>
       </div>
@@ -220,12 +236,12 @@
           </svg>
         </a>
         <nav class="nav-menu" aria-label="primary">
-          <ul class="site-links unstyled-list" aria-label="site navigation">
+          <ul class="site-links list" aria-label="site navigation">
             <li><a href="#features" class="link site-link">Features</a></li>
             <li><a href="#" class="link site-link">Pricing</a></li>
             <li><a href="#" class="link site-link">Contact</a></li>
           </ul>
-          <ul class="social-links unstyled-list" aria-label="social links">
+          <ul class="social-links list" aria-label="social links">
             <li><a href="https://facebook.com" class="social-link" aria-label="facebook"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
             <li><a href="https://twitter.com" class="social-link" aria-label="twitter"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
           </ul>

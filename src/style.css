@@ -13,9 +13,11 @@
   --line-height-400: 1.4;
   --line-height-600: 1.6;
   --color-neutral: hsl(224, 6%, 47%);
+  --color-neutral-light: hsl(0, 0%, 95%);
   --color-neutral-dark: hsl(229, 31%, 21%);
   --color-primary-dark: hsl(231, 69%, 60%);
   --color-primary-accent: hsl(0, 94%, 66%);
+  --divider-border: 1px solid var(--color-neutral);
 }
 
 * {
@@ -44,7 +46,7 @@ body.js-no-scroll {
 }
 
 /*------------------------------------*\
-  #DEFAULTS
+  #RESET
 \*------------------------------------*/
 
 body {
@@ -80,16 +82,30 @@ svg {
 
 .primary-container {
   --primary-padding: 1.5rem;
-  margin: auto;
+  margin: 0 auto;
   max-width: 68.75rem;
   padding-inline: var(--primary-padding);
+}
+
+.section-container {
+  margin: 0 auto;
+  max-width: 52ch;
+}
+
+.site-logo-link {
+  display: inline-flex;
+}
+
+.top-lvl-section {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 /*------------------------------------*\
   #UTILS
 \*------------------------------------*/
 
-.unstyled-list {
+.list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -105,7 +121,7 @@ svg {
 }
 
 /*------------------------------------*\
-  #GLOBAL
+  #HEADINGS
 \*------------------------------------*/
 
 .regular-text {
@@ -134,7 +150,7 @@ svg {
   margin-bottom: 0.5em;
 }
 
-.card__heading {
+.card-heading {
   font-size: var(--fs-500);
   font-weight: var(--fw-semi-bold);
   line-height: var(--line-height-400);
@@ -143,10 +159,6 @@ svg {
 .feature-tab-heading > button {
   font-size: var(--fs-300);
   line-height: var(--line-height-400);
-}
-
-.site-logo-link {
-  display: inline-flex;
 }
 
 /*------------------------------------*\
@@ -158,21 +170,22 @@ svg {
   border-radius: 0.25em;
   font-size: var(--fs-200);
   font-weight: 500;
+  line-height: var(--line-height-400);
   padding: 0.75em 1.1em;
 }
 
-.btn--dark {
+.btn-dark {
   background-color: var(--color-primary-dark);
   color: white;
 }
 
-.btn--light {
-  background-color: hsl(0, 0%, 95%);
-  box-shadow: 0px 1px 7px -3px rgba(0,0,0,0.75);
+.btn-light {
+  background-color: var(--color-neutral-light);
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
   color: var(--color-neutral-dark);
 }
 
-.btn--accent {
+.btn-accent {
   background-color: var(--color-primary-accent);
   color: white;
 }
@@ -215,7 +228,7 @@ svg {
   color: white;
   display: flex;
   flex-direction: column;
-  inset: 0 0 0 0;
+  inset: 0;
   padding: calc(1rem + var(--header-height)) var(--primary-padding) 0 var(--primary-padding);
   position: fixed;
   text-align: center;
@@ -226,20 +239,20 @@ svg {
 }
 
 .header .site-links > li {
-  --border: 2px solid rgba(95, 106, 134, 0.481);
-  border-bottom: var(--border);
+  border-bottom: var(--divider-border);
 }
 
 .header .site-links > li:first-child {
-  border-top: var(--border);
+  border-top: var(--divider-border);
 }
 
 .header .site-link {
   display: inline-block;
-  padding: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
 
-.header .btn--login {
+.header .btn-login {
   background-color: transparent;
   border: 2px solid white;
   font-size: inherit;
@@ -310,7 +323,7 @@ svg {
     display: none;
   }
 
-  .header .btn--login {
+  .header .btn-login {
     background-color: var(--color-primary-accent);
     border: none;
     margin: 0 0 0 calc(var(--site-link-margin) + var(--site-link-padding));
@@ -327,16 +340,15 @@ svg {
 \*------------------------------------*/
 
 .hero-section {
-  padding-bottom: 3rem;
-  padding-top: 4rem;
   text-align: center;
 }
 
-.hero-image {
-  margin-bottom: 5rem;
+.hero-section-content {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-.hero-btns-container {
+.hero-btns {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -348,33 +360,29 @@ svg {
 \*------------------------------------*/
 
 .features-section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   text-align: center;
 }
 
-.tab-btn {
+.feature-tab-btn {
   background-color: transparent;
   border: none;
   padding: 0.75em;
 }
 
 .feature-tab-heading {
-  --border: 1px solid rgba(95, 106, 134, 0.481);
-  border-bottom: var(--border);
+  border-bottom: var(--divider-border);
 }
 
 .feature-tab-heading:first-child {
-  border-top: var(--border);
+  border-top: var(--divider-border);
 }
 
 .features-tabs {
   margin-bottom: 2rem;
 }
 
-.feature-img {
+.feature-main-img {
   margin: 0 auto;
-  margin-bottom: 2rem;
 }
 
 /*------------------------------------*\
@@ -383,28 +391,38 @@ svg {
 
 .download-section {
   text-align: center;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+  display: flex;
+  flex-direction: row;
 }
 
-.card {
+.download-card {
   border-radius: 0.5rem;
   box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 1em;
-  padding-top: 2em;
   max-width: 24ch;
 }
 
-.card-browser-logo {
-  margin: 0 auto;
-  padding-bottom: 2em;
+.download-card-bottom {
+  padding: 1.25rem;
 }
 
-.card-button {
-  margin-top: 1em;
+.download-card-top {
+  padding: 1.25rem 1.25rem 0;
+}
+
+.download-card-browser-logo {
+  margin: 1rem auto;
+}
+
+.download-card-button {
+  width: 100%;
+}
+
+.card-min-browser {
+  font-size: var(--fs-300);
+  color: var(--color-neutral);
 }
 
 .download-cards {
@@ -416,16 +434,6 @@ svg {
 /*------------------------------------*\
   #FAQ SECTION
 \*------------------------------------*/
-
-.faq-section {
-  padding-bottom: 3rem;
-  padding-top: 3rem;
-}
-
-.faq-container {
-  max-width: 52ch;
-  margin: 0 auto;
-}
 
 .faq-heading,
 .faq-intro-text {
@@ -450,16 +458,15 @@ svg {
 }
 
 .faq-accordion {
-  --border: 1px solid rgba(95, 106, 134, 0.481);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .faq-accordion-panel:first-child {
-  border-top: var(--border);
+  border-top: var(--divider-border);
 }
 
 .faq-accordion-panel {
-  border-bottom: var(--border);
+  border-bottom: var(--divider-border);
 }
 
 /*------------------------------------*\
@@ -469,14 +476,7 @@ svg {
 .cta-section {
   background-color: var(--color-primary-dark);
   color: white;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
   text-align: center;
-}
-
-.cta-container {
-  margin: 0 auto;
-  max-width: 52ch;
 }
 
 .cta-intro {
@@ -491,7 +491,7 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  margin: 0 auto;
+  margin: 1.5rem auto 0;
   max-width: 30ch;
 }
 
@@ -509,7 +509,9 @@ svg {
 /*------------------------------------*\
   #FOOTER
 \*------------------------------------*/
+
 .footer {
+  --footer-base-padding: 0.5rem;
   --logo-color: white;
   background-color: var(--color-neutral-dark);
   color: white;
@@ -517,42 +519,29 @@ svg {
 }
 
 .footer .site-logo-link {
-  margin-bottom: 1rem;
+  margin-bottom: calc(2 * var(--footer-base-padding));
 }
 
 .footer .site-link {
   display: inline-block;
   letter-spacing: var(--letter-spaced-200);
-  padding: 1rem;
+  margin: var(--footer-base-padding);
+  padding: var(--footer-base-padding);
   text-transform: uppercase;
 }
 
 .footer-content {
-  padding: 2rem 0 1rem;
+  padding: calc(4 * var(--footer-base-padding)) 0 calc(2 * var(--footer-base-padding));
 }
 
 .footer .social-links {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .footer .social-link {
   display: inline-block;
-  margin: 0.5rem;
-  padding: 0.5rem;
-}
-
-/*------------------------------------*\
-  #MISC
-\*------------------------------------*/
-
-.hero-section-content {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.card__min-browser {
-  font-size: var(--fs-300);
-  color: var(--color-neutral);
+  margin: var(--footer-base-padding);
+  padding: var(--footer-base-padding);
 }
