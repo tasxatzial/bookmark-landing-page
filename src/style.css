@@ -391,6 +391,7 @@ svg {
 \*------------------------------------*/
 
 .features-section {
+  overflow: hidden;
   text-align: center;
 }
 
@@ -427,6 +428,28 @@ svg {
 
 .feature-main-img {
   margin: 0 auto;
+}
+
+.feature-img-container {
+  margin-bottom: 5.5rem;
+  position: relative;
+}
+
+.feature-img-container > div {
+  margin: 0 auto;
+  position: relative;
+}
+
+.feature-img-container > div::after {
+  content: "";
+  background-color: var(--color-primary-dark);
+  border-bottom-right-radius: 100px;
+  bottom: -19%;
+  left: -500%;
+  position: absolute;
+  right: 13%;
+  top: 17%;
+  z-index: -1;
 }
 
 /*------------------------------------*\
