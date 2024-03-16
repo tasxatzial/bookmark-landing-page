@@ -95,7 +95,7 @@ svg {
 
 .section-container {
   margin: 0 auto;
-  max-width: 52ch;
+  max-width: 47ch;
 }
 
 .site-logo-link {
@@ -203,6 +203,7 @@ svg {
 .header {
   position: relative;
   z-index: 10;
+  isolation: isolate;
 }
 
 .header .site-logo-link {
@@ -349,12 +350,33 @@ svg {
 \*------------------------------------*/
 
 .hero-section {
+  overflow: hidden;
   text-align: center;
 }
 
-.hero-section-content {
-  display: flex;
-  flex-direction: column-reverse;
+.hero-img-container {
+  margin-right: calc(-1 * var(--primary-padding));
+  margin-left: calc(-1 * var(--primary-padding));
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.hero-img-container > div {
+  margin: 0 auto;
+  position: relative;
+  width: fit-content;
+}
+
+.hero-img-container > div::after {
+  content: "";
+  background-color: var(--color-primary-dark);
+  border-bottom-left-radius: 120px;
+  bottom: 0;
+  left: 14%;
+  position: absolute;
+  right: -500%;
+  top: 22%;
+  z-index: -1;
 }
 
 .hero-btns {
