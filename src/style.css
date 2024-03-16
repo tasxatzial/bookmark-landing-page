@@ -468,7 +468,7 @@ svg {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 24ch;
+  max-width: 26ch;
 }
 
 .download-card-bottom {
