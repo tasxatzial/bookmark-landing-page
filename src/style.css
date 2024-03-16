@@ -8,6 +8,7 @@
   --fs-300: 1rem;
   --fs-500: 1.3rem;
   --fs-600: 1.5rem;
+  --fs-650: 1.8rem;
   --fs-700: 1.9rem;
   --fs-800: 2.6rem;
   --letter-spaced-200: 0.1em;
@@ -109,9 +110,10 @@ svg {
   padding-inline: var(--primary-padding);
 }
 
-.section-container {
+.section-container,
+.features-tablist {
   margin: 0 auto;
-  max-width: 47ch;
+  max-width: 41ch;
 }
 
 .site-logo-link {
@@ -181,6 +183,22 @@ svg {
 .feature-tab-heading > button {
   font-size: var(--fs-300);
   line-height: var(--line-height-400);
+}
+
+@media screen and (min-width: 60em) {
+  .hero-heading {
+    font-size: var(--fs-800);
+    line-height: var(--line-height-200);
+  }
+
+  .features-heading,
+  .feature-panel-heading,
+  .download-heading,
+  .faq-heading,
+  .cta-heading {
+    font-size: var(--fs-650);
+    line-height: var(--line-height-200);
+  }
 }
 
 /*------------------------------------*\
@@ -395,7 +413,6 @@ svg {
   z-index: -1;
 }
 
-
 .hero-btns {
   display: flex;
   flex-wrap: wrap;
@@ -447,7 +464,7 @@ svg {
 }
 
 .feature-tab-btn {
-  --tab-btn-padding: 0.75em;
+  --tab-btn-padding: 0.85em;
   background-color: transparent;
   border: none;
   position: relative;
@@ -501,6 +518,54 @@ svg {
   right: 13%;
   top: 17%;
   z-index: -1;
+}
+
+@media screen and (min-width: 60em) {
+  .features-tabs {
+    border-bottom: var(--divider-border);
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+  .features-tablist {
+    max-width: 100%;
+  }
+
+  .feature-tab-btn {
+    --tab-btn-padding: 1em;
+    width: 21ch;
+  }
+
+  .feature-tab-heading,
+  .feature-tab-heading:first-child {
+    border: none;
+  }
+
+  .feature-tab-btn[aria-selected="true"]::after {
+    left: 0;
+    right: 0;
+  }
+
+  .feature-panel-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    text-align: left;
+  }
+
+  .feature-text-container {
+    padding-top: 35px;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+  .feature-text-container {
+    padding-top: 70px;
+  }
 }
 
 /*------------------------------------*\
@@ -691,15 +756,4 @@ svg {
   display: inline-block;
   margin: var(--footer-base-padding);
   padding: var(--footer-base-padding);
-}
-
-@media screen and (min-width: 60em) {
-  /*------------------------------------*\
-  #HEADINGS
-  \*------------------------------------*/
-
-  .hero-heading {
-    font-size: var(--fs-800);
-    line-height: var(--line-height-200);
-  }
 }
