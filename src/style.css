@@ -215,7 +215,6 @@ svg {
   --header-height: calc(var(--header-padding) + 3rem);
   align-items: center;
   display: flex;
-  font-size: var(--fs-500);
   height: var(--header-height);
   justify-content: space-between;
   letter-spacing: var(--letter-spaced-200);
@@ -236,6 +235,7 @@ svg {
   color: white;
   display: flex;
   flex-direction: column;
+  font-size: var(--fs-500);
   inset: 0;
   opacity: 0%;
   padding: calc(1rem + var(--header-height)) var(--primary-padding) 0 var(--primary-padding);
@@ -610,6 +610,14 @@ svg {
   text-align: center;
 }
 
+.footer-content {
+  padding: calc(4 * var(--footer-base-padding)) 0 calc(2 * var(--footer-base-padding));
+}
+
+.footer .nav-menu {
+  font-size: var(--fs-200);
+}
+
 .footer .site-logo-link {
   margin-bottom: calc(2 * var(--footer-base-padding));
 }
@@ -620,10 +628,6 @@ svg {
   margin: var(--footer-base-padding);
   padding: var(--footer-base-padding);
   text-transform: uppercase;
-}
-
-.footer-content {
-  padding: calc(4 * var(--footer-base-padding)) 0 calc(2 * var(--footer-base-padding));
 }
 
 .footer .social-links {
