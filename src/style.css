@@ -241,6 +241,7 @@ svg {
   .cta-heading {
     font-size: var(--fs-650);
     line-height: var(--line-height-200);
+    margin-bottom: 0.75em;
   }
 }
 
@@ -722,6 +723,27 @@ svg {
 
 .cta-email-input::placeholder {
   opacity: 0.5;
+}
+
+@media screen and (min-width: 60em) {
+  .cta-section .section-column-container {
+    max-width: 40ch;
+  }
+
+  .cta-form {
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 90ch;
+    justify-content: center;
+  }
+
+  .cta-intro {
+    margin-bottom: 2em;
+  }
+  
+  .cta-email-input {
+    flex-grow: 2;
+  }
 }
 
 /*------------------------------------*\
