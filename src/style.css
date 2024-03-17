@@ -109,8 +109,8 @@ svg {
 }
 
 .top-lvl-section {
-  padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .outer-container {
@@ -233,7 +233,6 @@ svg {
 .header {
   position: relative;
   z-index: 10;
-  isolation: isolate;
 }
 
 .header .site-logo-link {
@@ -241,7 +240,7 @@ svg {
 }
 
 .header-content {
-  --header-padding: 1rem;
+  --header-padding: 1.5rem;
   --header-height: calc(var(--header-padding) + 3rem);
   align-items: center;
   display: flex;
@@ -285,7 +284,8 @@ svg {
   border-top: var(--divider-border);
 }
 
-.header .site-link {
+.header .site-link,
+.header .social-link {
   display: inline-block;
   margin: 0.5rem;
   padding: 0.5rem;
@@ -311,12 +311,6 @@ svg {
 
 .header .social-links > li {
   display: inline-flex;
-}
-
-.header .social-link {
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 0.5rem;
 }
 
 @media screen and (min-width: 45em) {
@@ -462,7 +456,7 @@ svg {
 }
 
 .feature-tab-btn {
-  --tab-btn-padding: 0.85em;
+  --tab-btn-padding: 1em;
   background-color: transparent;
   border: none;
   position: relative;
@@ -533,7 +527,7 @@ svg {
   }
 
   .feature-tab-btn {
-    --tab-btn-padding: 1em;
+    --tab-btn-padding: 1.25em;
     width: 21ch;
   }
 
@@ -639,7 +633,7 @@ svg {
   gap: 1em;
   justify-content: space-between;
   line-height: var(--line-height-400);
-  padding: 1em 0;
+  padding: 1.25em 0;
   width: 100%;
 }
 
@@ -670,13 +664,9 @@ svg {
   overflow: hidden;
 }
 
-.faq-answer-content > div > .regular-text {
-  margin: 0;
-}
-
 .faq-answer-content > div > span {
   display: block;
-  padding-bottom: calc(2 * var(--regular-text-fs));
+  margin-bottom: calc(1 * var(--regular-text-fs));
 }
 
 /*------------------------------------*\
@@ -721,7 +711,7 @@ svg {
 \*------------------------------------*/
 
 .footer {
-  --footer-base-padding: 0.5rem;
+  --footer-base-padding: 0.75rem;
   --logo-color: white;
   background-color: var(--color-neutral-dark);
   color: white;
@@ -729,7 +719,7 @@ svg {
 }
 
 .footer-content {
-  padding: calc(4 * var(--footer-base-padding)) 0 calc(2 * var(--footer-base-padding));
+  padding: 3rem 0 1.5rem;
 }
 
 .footer .nav-menu {
@@ -737,25 +727,31 @@ svg {
 }
 
 .footer .site-logo-link {
-  margin-bottom: calc(2 * var(--footer-base-padding));
+  margin-bottom: 1.75rem;
 }
 
 .footer .site-link {
-  display: inline-block;
+  display: inline-flex;
   letter-spacing: var(--letter-spaced-200);
-  margin: var(--footer-base-padding);
-  padding: var(--footer-base-padding);
+  padding: 0.5rem;
   text-transform: uppercase;
+}
+
+.footer .site-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .footer .social-links {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-top: 1.25rem;
 }
 
 .footer .social-link {
   display: inline-block;
-  margin: var(--footer-base-padding);
-  padding: var(--footer-base-padding);
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
