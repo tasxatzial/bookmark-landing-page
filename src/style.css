@@ -98,10 +98,9 @@ svg {
   padding-inline: var(--primary-padding);
 }
 
-.section-container,
-.features-tablist {
+.section-column-container {
   margin: 0 auto;
-  max-width: 41ch;
+  max-width: 47ch;
 }
 
 .site-logo-link {
@@ -549,7 +548,7 @@ svg {
     text-align: left;
   }
 
-  .feature-text-container {
+  .feature-panelText-container {
     padding-top: 35px;
   }
 
@@ -559,7 +558,7 @@ svg {
 }
 
 @media screen and (min-width: 68.75em) {
-  .feature-text-container {
+  .feature-panelText-container {
     padding-top: 70px;
   }
 }
@@ -597,11 +596,6 @@ svg {
 
 .download-card-button {
   width: 100%;
-}
-
-.card-min-browser {
-  font-size: var(--fs-300);
-  color: var(--color-neutral);
 }
 
 .download-cards {

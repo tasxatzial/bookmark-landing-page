@@ -50,7 +50,7 @@
                 <img class="hero-img" src="img/illustration-hero.svg" alt="">
               </div>
             </div>
-            <div class="hero-text-container section-container">
+            <div class="hero-text-container section-column-container">
               <h1 id="hero-heading" class="hero-heading color-neutral-dark">A Simple Bookmark Manager</h1>
               <p class="regular-text">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
               <div class="hero-btns">
@@ -63,11 +63,11 @@
       </section>
       <section id="features" class="features-section top-lvl-section" aria-labelledby="features-heading">
         <div class="primary-container">
-          <div class="section-container">
+          <div class="section-column-container">
             <h2 id="features-heading" class="features-heading color-neutral-dark">Features</h2>
             <p class="regular-text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
           </div>
-          <div id="features-tablist" class="features-tablist" role="tablist" aria-labelledby="features-heading">
+          <div id="features-tablist" class="features-tablist section-column-container" role="tablist" aria-labelledby="features-heading">
             <div id="features-tabs" class="features-tabs">
               <h3 class="feature-tab-heading"><button id="features-tab1-btn" class="feature-tab-btn color-neutral-dark" role="tab" aria-selected="true" aria-controls="features-tabpanel1">Simple Bookmarking</button></h3>
               <h3 class="feature-tab-heading"><button id="features-tab2-btn" class="feature-tab-btn color-neutral-dark" tabindex="-1" role="tab" aria-selected="false" aria-controls="features-tabpanel2">Speedy Searching</button></h3>
@@ -79,9 +79,9 @@
                   <img src="img/illustration-features-tab-1.svg" alt="" class="feature-main-img">
                 </div>
               </div>
-              <div tabindex="0" class="feature-text-container section-container">
+              <div tabindex="0" class="feature-panelText-container section-column-container">
                 <h3 class="feature-panel-heading color-neutral-dark">Bookmark in one click</h3>
-                <p class="regular-text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                <p class="regular-text">Organize your bookmarks however you like. Our simple drag‑and‑drop interface gives you complete control over how you manage your favourite sites.</p>
                 <button class="btn btn-dark">More Info</button>
               </div>
             </div>
@@ -91,7 +91,7 @@
                   <img src="img/illustration-features-tab-2.svg" alt="" class="feature-main-img">
                 </div>
               </div>
-              <div tabindex="0" class="feature-text-container section-container">
+              <div tabindex="0" class="feature-panelText-container section-column-container">
                 <h3 class="feature-panel-heading color-neutral-dark">Intelligent search</h3>
                 <p class="regular-text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
                 <button class="btn btn-dark">More Info</button>
@@ -103,7 +103,7 @@
                   <img src="img/illustration-features-tab-3.svg" alt="" class="feature-main-img">
                 </div>
               </div>
-              <div tabindex="0" class="feature-text-container section-container">
+              <div tabindex="0" class="feature-panelText-container section-column-container">
                 <h3 class="feature-panel-heading color-neutral-dark">Share your bookmarks</h3>
                 <p class="regular-text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
                 <button class="btn btn-dark">More Info</button>
@@ -114,62 +114,58 @@
       </section>
       <section class="download-section top-lvl-section" aria-labelledby="download-heading">
         <div class="primary-container">
-          <div class="section-container">
-            <div>
-              <h2 id="download-heading" class="download-heading color-neutral-dark">Download the extension</h2>
-              <p class="regular-text">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
-            </div>
-            <ul class="list download-cards" aria-label="supported browsers">
-              <li>
-                <article class="download-card">
-                  <div class="download-card-top">
-                    <img src="img/logo-chrome.svg" alt="chrome logo" class="download-card-browser-logo">
-                    <h3 class="card-heading color-neutral-dark">Add to Chrome</h3>
-                    <p class="card-min-browser regular-text">Minimum version 62</p>
-                  </div>
-                  <img src="img/bg-dots.svg" alt="">
-                  <div class="download-card-bottom">
-                    <button class="btn btn-dark download-card-button">Add & Install Extension</button>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article class="download-card">
-                  <div class="download-card-top">
-                    <img src="img/logo-firefox.svg" alt="chrome logo" class="download-card-browser-logo">
-                    <h3 class="card-heading color-neutral-dark">Add to Firefox</h3>
-                    <p class="card-min-browser regular-text">Minimum version 55</p>
-                  </div>
-                  <img src="img/bg-dots.svg" alt="">
-                  <div class="download-card-bottom">
-                    <button class="btn btn-dark download-card-button">Add & Install Extension</button>
-                  </div>
-                </article>
-              </li>
-              <li>
-                <article class="download-card">
-                  <div class="download-card-top">
-                    <img src="img/logo-opera.svg" alt="chrome logo" class="download-card-browser-logo">
-                    <h3 class="card-heading color-neutral-dark">Add to Opera</h3>
-                    <p class="card-min-browser regular-text">Minimum version 46</p>
-                  </div>
-                  <img src="img/bg-dots.svg" alt="">
-                  <div class="download-card-bottom">
-                    <button class="btn btn-dark download-card-button">Add & Install Extension</button>
-                  </div>
-                </article>
-              </li>
-            </ul>
+          <div class="section-column-container">
+            <h2 id="download-heading" class="download-heading color-neutral-dark">Download the extension</h2>
+            <p class="regular-text">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
           </div>
+          <ul class="list download-cards" aria-label="supported browsers">
+            <li>
+              <article class="download-card">
+                <div class="download-card-top">
+                  <img src="img/logo-chrome.svg" alt="chrome logo" class="download-card-browser-logo">
+                  <h3 class="card-heading color-neutral-dark">Add to Chrome</h3>
+                  <p class="card-min-browser regular-text">Minimum version 62</p>
+                </div>
+                <img src="img/bg-dots.svg" alt="">
+                <div class="download-card-bottom">
+                  <button class="btn btn-dark download-card-button">Add & Install Extension</button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="download-card">
+                <div class="download-card-top">
+                  <img src="img/logo-firefox.svg" alt="chrome logo" class="download-card-browser-logo">
+                  <h3 class="card-heading color-neutral-dark">Add to Firefox</h3>
+                  <p class="card-min-browser regular-text">Minimum version 55</p>
+                </div>
+                <img src="img/bg-dots.svg" alt="">
+                <div class="download-card-bottom">
+                  <button class="btn btn-dark download-card-button">Add & Install Extension</button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="download-card">
+                <div class="download-card-top">
+                  <img src="img/logo-opera.svg" alt="chrome logo" class="download-card-browser-logo">
+                  <h3 class="card-heading color-neutral-dark">Add to Opera</h3>
+                  <p class="card-min-browser regular-text">Minimum version 46</p>
+                </div>
+                <img src="img/bg-dots.svg" alt="">
+                <div class="download-card-bottom">
+                  <button class="btn btn-dark download-card-button">Add & Install Extension</button>
+                </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="faq-section top-lvl-section" aria-labelledby="faq-heading">
         <div class="primary-container">
-          <div class="section-container">
-            <div>
-              <h2 id="faq-heading" class="faq-heading color-neutral-dark">Frequently Asked Questions</h2>
-              <p class="regular-text faq-intro-text">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
-            </div>
+          <div class="section-column-container">
+            <h2 id="faq-heading" class="faq-heading color-neutral-dark">Frequently Asked Questions</h2>
+            <p class="regular-text faq-intro-text">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
             <div id="faq-accordion" class="faq-accordion">
               <div class="faq-accordion-panel">
                 <h3 id="faq-panel1-heading">
@@ -242,7 +238,7 @@
       </section>
       <section class="cta-section top-lvl-section" aria-labelledby="cta-heading">
         <div class="primary-container">
-          <div class="section-container">
+          <div class="section-column-container">
             <p class="cta-intro">35,000+ Already Joined</p>
             <h2 id="cta-heading" class="cta-heading">Stay up-to-date with what we're doing</h2>
             <form action="#" method="POST" class="cta-form">
