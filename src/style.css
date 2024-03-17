@@ -286,6 +286,14 @@ svg {
 .header .site-link,
 .header .social-link {
   display: inline-block;
+}
+
+.header .site-link {
+  padding: 1em;
+  width: 100%;
+}
+
+.header .social-link {
   margin: 0.5rem;
   padding: 0.5rem;
 }
@@ -321,8 +329,8 @@ svg {
   }
   
   .header .nav-menu {
-    --site-link-padding: 1rem;
-    --site-link-margin: 0.5rem;
+    --site-link-padding: 0.5rem;
+    --gap: 1.75em;
     background-color: initial;
     position: initial;
     align-items: center;
@@ -330,6 +338,7 @@ svg {
     flex-direction: row;
     flex-wrap: nowrap;
     font-size: var(--fs-100);
+    gap: calc(var(--gap) + var(--site-link-padding));
     letter-spacing: var(--letter-spaced-200);
     opacity: 100%;
     padding: 0;
@@ -346,10 +355,11 @@ svg {
     color: var(--color-neutral-dark);
     display: flex;
     flex-direction: row;
+    gap: var(--gap);
   }
   
   .header .site-link {
-    margin: 0 var(--site-link-margin);
+    padding: var(--site-link-padding);
   }
 
   .header .social-links {
@@ -359,7 +369,7 @@ svg {
   .header .btn-login {
     background-color: var(--color-primary-accent);
     border: none;
-    margin: 0 0 0 calc(var(--site-link-margin) + var(--site-link-padding));
+    margin: 0;
     padding: 0.75em 1.5em;
   }
 
@@ -624,7 +634,6 @@ svg {
   border: none;
   display: inline-flex;
   font-size: var(--fs-300);
-  gap: 1em;
   justify-content: space-between;
   line-height: var(--line-height-400);
   padding: 1.25em 0;
@@ -660,7 +669,7 @@ svg {
 
 .faq-answer-content > div > span {
   display: block;
-  margin-bottom: calc(1 * var(--regular-text-fs));
+  margin-bottom: var(--regular-text-fs);
 }
 
 /*------------------------------------*\
@@ -705,7 +714,6 @@ svg {
 \*------------------------------------*/
 
 .footer {
-  --footer-base-padding: 0.75rem;
   --logo-color: white;
   background-color: var(--color-neutral-dark);
   color: white;
@@ -713,19 +721,15 @@ svg {
 }
 
 .footer-content {
-  padding: 3rem 0 1.5rem;
+  padding: 2.5rem 0 1.5rem;
 }
 
 .footer .nav-menu {
-  font-size: var(--fs-200);
-}
-
-.footer .site-logo-link {
-  margin-bottom: 1.75rem;
+  font-size: var(--fs-100);
 }
 
 .footer .site-link {
-  display: inline-flex;
+  display: inline-block;
   letter-spacing: var(--letter-spaced-200);
   padding: 0.5rem;
   text-transform: uppercase;
@@ -734,18 +738,19 @@ svg {
 .footer .site-links {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.25em;
+  margin-top: 1.75em;
+  margin-bottom: 1.75rem;
 }
 
 .footer .social-links {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 1.25rem;
+  gap: 1.5rem;
 }
 
 .footer .social-link {
   display: inline-block;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.5em;
 }
