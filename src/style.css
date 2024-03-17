@@ -418,14 +418,12 @@ svg {
 .hero-img-container {
   margin-right: calc(-1 * var(--primary-padding));
   margin-left: calc(-1 * var(--primary-padding));
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
-.hero-img-container > div {
+.hero-img {
   margin: 0 auto;
-  position: relative;
-  width: fit-content;
 }
 
 .hero-btns {
@@ -437,7 +435,7 @@ svg {
 
 @media screen and (min-width: 60em) {
   .hero-container {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     flex-direction: row-reverse;
     gap: 2rem;
@@ -451,18 +449,11 @@ svg {
   }
 
   .hero-text-container {
-    margin-top: 35px;
     text-align: left;
   }
 
   .hero-btns {
     justify-content: flex-start;
-  }
-}
-
-@media screen and (min-width: 68.75em) {
-  .hero-text-container {
-    margin-top: 70px;
   }
 }
 
