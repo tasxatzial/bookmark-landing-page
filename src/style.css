@@ -547,7 +547,7 @@ svg {
     right: 0;
   }
 
-  .feature-panel-container {
+  .feature-panel-container:not([hidden]) {
     align-items: flex-start;
     display: flex;
     flex-direction: row;

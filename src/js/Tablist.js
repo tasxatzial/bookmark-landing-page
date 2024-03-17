@@ -44,7 +44,6 @@ export default class Tablist {
   }
 
   onClick(e) {
-    console.log(1)
     const tab = e.target.closest('button');
     if (!tab) {
       return;
