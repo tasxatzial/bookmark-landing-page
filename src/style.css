@@ -791,3 +791,27 @@ svg {
   display: inline-block;
   padding: 0.5em;
 }
+
+@media screen and (min-width: 45em) {
+  .footer-content {
+    padding-top: 1.5rem;
+  }
+
+  .footer-content,
+  .footer .nav-menu,
+  .footer .site-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer .nav-menu {
+    flex-grow: 2;
+    justify-content: space-between;
+  }
+
+  .footer .site-links {
+    gap: 1.75em;
+    margin: 0 3.5em 0;
+  }
+}
