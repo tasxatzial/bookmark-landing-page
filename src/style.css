@@ -62,8 +62,9 @@ body.js-no-scroll {
 body {
   background-color: var(--color-neutral-light);
   font-family: 'Rubik', sans-serif;
-  margin: 0;
+  margin: 0 auto;
   min-height: 100vh;
+  max-width: var(--max-width);
 }
 
 main,
@@ -97,11 +98,6 @@ svg {
 /*------------------------------------*\
   #WRAPPERS
 \*------------------------------------*/
-
-.outer-container {
-  margin: 0 auto;
-  max-width: var(--max-width);
-}
 
 .primary-container {
   --primary-padding: 1.5rem;
@@ -425,6 +421,7 @@ svg {
     align-items: flex-start;
     display: flex;
     flex-direction: row-reverse;
+    gap: 2rem;
     justify-content: center;
   }
 
@@ -435,6 +432,7 @@ svg {
   }
 
   .hero-text-container {
+    margin-top: 35px;
     text-align: left;
   }
 
@@ -553,12 +551,16 @@ svg {
     align-items: flex-start;
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    gap: 4rem;
     text-align: left;
   }
 
   .feature-text-container {
     padding-top: 35px;
+  }
+
+  .feature-img-container > div::after {
+    top: 24%;
   }
 }
 
