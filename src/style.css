@@ -88,6 +88,34 @@ svg {
 }
 
 /*------------------------------------*\
+  #BLOBS
+\*------------------------------------*/
+
+.blob-hero::after {
+  content: "";
+  background-color: var(--color-primary-dark);
+  border-bottom-left-radius: 110px;
+  position: absolute;
+  z-index: -1;
+  bottom: 3%;
+  right: -10rem;
+  left: 16%;
+  top: 19%;
+}
+
+.blob-features::after {
+  content: "";
+  background-color: var(--color-primary-dark);
+  border-bottom-right-radius: 110px;
+  position: absolute;
+  z-index: -1;
+  bottom: -15%;
+  left: -10rem;
+  right: 10%;
+  top: 17%;
+}
+
+/*------------------------------------*\
   #WRAPPERS
 \*------------------------------------*/
 
@@ -400,18 +428,6 @@ svg {
   width: fit-content;
 }
 
-.hero-img-container > div::after {
-  content: "";
-  background-color: var(--color-primary-dark);
-  border-bottom-left-radius: 120px;
-  bottom: 0;
-  left: 14%;
-  position: absolute;
-  right: -500%;
-  top: 22%;
-  z-index: -1;
-}
-
 .hero-btns {
   display: flex;
   flex-wrap: wrap;
@@ -447,11 +463,6 @@ svg {
 @media screen and (min-width: 68.75em) {
   .hero-text-container {
     margin-top: 70px;
-  }
-
-  .hero-img-container > div::after {
-    left: 30%;
-    top: 30%;
   }
 }
 
@@ -509,18 +520,6 @@ svg {
   position: relative;
 }
 
-.feature-img-container > div::after {
-  content: "";
-  background-color: var(--color-primary-dark);
-  border-bottom-right-radius: 100px;
-  bottom: -19%;
-  left: -500%;
-  position: absolute;
-  right: 13%;
-  top: 17%;
-  z-index: -1;
-}
-
 @media screen and (min-width: 60em) {
   .features-tabs {
     border-bottom: var(--divider-border);
@@ -560,10 +559,6 @@ svg {
 
   .feature-panelText-container {
     padding-top: 35px;
-  }
-
-  .feature-img-container > div::after {
-    top: 24%;
   }
 }
 
