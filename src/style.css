@@ -147,8 +147,9 @@ svg {
 }
 
 .section-column-container {
+  --_max-column-width: var(--max-column-width, 47ch);
   margin: 0 auto;
-  max-width: 47ch;
+  max-width: var(--_max-column-width);
 }
 
 .site-logo-link {
@@ -726,8 +727,8 @@ svg {
 }
 
 @media screen and (min-width: 60em) {
-  .cta-section .section-column-container {
-    max-width: 40ch;
+  .cta-section {
+    --max-column-width: 40ch;
   }
 
   .cta-form {
