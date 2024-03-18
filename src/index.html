@@ -14,7 +14,7 @@
 <body>
   <div class="outer-container">
     <header class="header">
-      <div class="primary-container">
+      <div class="inner-container">
         <div class="header-content">
           <a href="index.html" class="site-logo-link" aria-label="bookmark website">
             <svg class="icon" width="148" height="25">
@@ -22,19 +22,19 @@
             </svg>
           </a>
           <nav aria-label="primary">
-            <button class="toggle-nav-btn" aria-label="open navigation" aria-expanded="false" aria-controls="primary-nav-menu">
+            <button class="toggle-nav-btn" aria-label="open navigation" aria-expanded="false" aria-controls="header-nav-menu">
               <img src="img/icon-hamburger.svg" alt="open menu icon">
             </button>
-            <div id="primary-nav-menu" class="nav-menu">
-              <ul class="site-links list" aria-label="site navigation">
-                <li><a href="#features" class="link site-link">Features</a></li>
-                <li><a href="#" class="link site-link">Pricing</a></li>
-                <li><a href="#" class="link site-link">Contact</a></li>
+            <div id="header-nav-menu" class="header-nav-menu">
+              <ul class="header-site-links list" aria-label="site navigation">
+                <li><a href="#features" class="link header-site-link">Features</a></li>
+                <li><a href="#" class="link header-site-link">Pricing</a></li>
+                <li><a href="#" class="link header-site-link">Contact</a></li>
               </ul>
-              <button class="btn btn-accent btn-login">Login</button>
-              <ul class="social-links list" aria-label="social links">
-                <li><a href="https://facebook.com" class="social-link" aria-label="facebook"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
-                <li><a href="https://twitter.com" class="social-link" aria-label="twitter"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
+              <button class="btn btn-accent header-btn-login">Login</button>
+              <ul class="header-social-links list" aria-label="social links">
+                <li><a href="https://facebook.com" class="header-social-link" aria-label="facebook"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
+                <li><a href="https://twitter.com" class="header-social-link" aria-label="twitter"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
               </ul>
             </div>
           </nav>
@@ -43,7 +43,7 @@
     </header>
     <main>
       <section class="hero-section top-lvl-section" aria-labelledby="hero-heading">
-        <div class="primary-container">
+        <div class="inner-container">
           <div class="hero-container">
             <div class="hero-img-container">
               <div class="blob-hero">
@@ -62,7 +62,7 @@
         </div>
       </section>
       <section id="features" class="features-section top-lvl-section" aria-labelledby="features-heading">
-        <div class="primary-container">
+        <div class="inner-container">
           <div class="section-column-container">
             <h2 id="features-heading" class="features-heading color-neutral-dark">Features</h2>
             <p class="regular-text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
@@ -113,7 +113,7 @@
         </div>
       </section>
       <section class="download-section top-lvl-section" aria-labelledby="download-heading">
-        <div class="primary-container">
+        <div class="inner-container">
           <div class="section-column-container">
             <h2 id="download-heading" class="download-heading color-neutral-dark">Download the extension</h2>
             <p class="regular-text">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
@@ -162,7 +162,7 @@
         </div>
       </section>
       <section class="faq-section top-lvl-section" aria-labelledby="faq-heading">
-        <div class="primary-container">
+        <div class="inner-container">
           <div class="section-column-container">
             <h2 id="faq-heading" class="faq-heading color-neutral-dark">Frequently Asked Questions</h2>
             <p class="regular-text faq-intro-text">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
@@ -218,7 +218,7 @@
               <div class="faq-accordion-panel">
                 <h3 id="faq-panel4-heading">
                   <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-panel4-answer">
-                    <span class="faq-question">What about other Chromium browsers?</span>
+                    <span class="color-neutral-dark">What about other Chromium browsers?</span>
                     <svg class="icon" width="18" height="12">
                       <use xlink:href="img/icon-arrow.svg#icon-arrow"></use>
                     </svg>
@@ -237,7 +237,7 @@
         </div>
       </section>
       <section class="cta-section top-lvl-section" aria-labelledby="cta-heading">
-        <div class="primary-container">
+        <div class="inner-container">
           <div class="section-column-container">
             <p class="cta-intro">35,000+ Already Joined</p>
             <h2 id="cta-heading" class="cta-heading">Stay up-to-date with what we're doing</h2>
@@ -250,22 +250,22 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="primary-container">
+      <div class="inner-container">
         <div class="footer-content">
           <a href="index.html" class="site-logo-link" aria-label="bookmark website">
             <svg class="icon" width="148" height="25">
               <use xlink:href="img/logo-bookmark.svg#logo-bookmark"></use>
             </svg>
           </a>
-          <nav class="nav-menu" aria-label="primary">
-            <ul class="site-links list" aria-label="site navigation">
-              <li><a href="#features" class="link site-link">Features</a></li>
-              <li><a href="#" class="link site-link">Pricing</a></li>
-              <li><a href="#" class="link site-link">Contact</a></li>
+          <nav class="footer-nav-menu" aria-label="primary">
+            <ul class="footer-site-links list" aria-label="site navigation">
+              <li><a href="#features" class="link footer-site-link">Features</a></li>
+              <li><a href="#" class="link footer-site-link">Pricing</a></li>
+              <li><a href="#" class="link footer-site-link">Contact</a></li>
             </ul>
-            <ul class="social-links list" aria-label="social links">
-              <li><a href="https://facebook.com" class="social-link" aria-label="facebook"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
-              <li><a href="https://twitter.com" class="social-link" aria-label="twitter"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
+            <ul class="footer-social-links list" aria-label="social links">
+              <li><a href="https://facebook.com" class="footer-social-link" aria-label="facebook"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
+              <li><a href="https://twitter.com" class="footer-social-link" aria-label="twitter"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
             </ul>
           </nav>
         </div>

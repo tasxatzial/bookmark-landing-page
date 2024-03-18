@@ -11,7 +11,7 @@ const headerNav = document.querySelector("nav[aria-label='primary']");
 const toggleNavBtn = headerNav.querySelector('.toggle-nav-btn');
 const twitterLink = headerNav.querySelector("a[aria-label='twitter']");
 const mqList = window.matchMedia("(min-width: 45em)");
-const headerNavLinks = headerNav.querySelector('.site-links');
+const headerNavLinks = headerNav.querySelector('.header-site-links');
 
 let navShouldBeOpen = false;
 
