@@ -109,11 +109,12 @@ svg {
   width: 9.25rem;
 }
 
-.social-link > img {
+.header-social-link > svg,
+.footer-social-link > svg {
   width: 1.5rem;
 }
 
-.toggle-nav-btn > img {
+.toggle-nav-btn > svg {
   width: 1rem;
 }
 
