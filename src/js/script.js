@@ -7,8 +7,11 @@ const tablist = new Tablist(tabsContainer);
 const accordionContainer = document.getElementById('faq-accordion');
 const accordion = new Accordion(accordionContainer);
 
+const spritePath = new URL('../img/sprites.svg', import.meta.url).pathname;
 const headerNav = document.querySelector("nav[aria-label='primary']");
 const toggleNavBtn = headerNav.querySelector('.toggle-nav-btn');
+const toggleNavBtnImg = toggleNavBtn.querySelector('svg');
+const toggleNavBtnIcon = toggleNavBtn.querySelector('use');
 const twitterLink = headerNav.querySelector("a[aria-label='twitter']");
 const mqList = window.matchMedia("(min-width: 45em)");
 const headerNavLinks = headerNav.querySelector('.header-site-links');
@@ -57,7 +60,9 @@ function toggleNav() {
 
 function closeNav() {
     document.body.classList.remove('js-nav-open', 'js-no-scroll');
-    toggleNavBtn.innerHTML = `<img src="img/icon-hamburger.svg" alt="open menu icon">`;
+    toggleNavBtnIcon.setAttribute('xlink:href', `${spritePath}#icon-hamburger`);
+    toggleNavBtnImg.setAttribute('width', '18');
+    toggleNavBtnImg.setAttribute('height', '15');
     toggleNavBtn.setAttribute('aria-label', 'open navigation');
     toggleNavBtn.setAttribute('aria-expanded', 'false');
     navShouldBeOpen = false;
@@ -68,7 +73,9 @@ function openNav() {
     if (document.documentElement.scrollHeight > document.documentElement.clientHeight) {
         document.body.classList.add('js-no-scroll');
     }
-    toggleNavBtn.innerHTML = `<img src="img/icon-close.svg" alt="close menu icon">`;
+    toggleNavBtnIcon.setAttribute('xlink:href', `${spritePath}#icon-close`);
+    toggleNavBtnImg.setAttribute('width', '16');
+    toggleNavBtnImg.setAttribute('height', '15');
     toggleNavBtn.setAttribute('aria-label', 'close navigation');
     toggleNavBtn.setAttribute('aria-expanded', 'true');
 }
