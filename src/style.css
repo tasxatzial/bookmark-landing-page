@@ -21,7 +21,7 @@
   --color-neutral-dark: hsl(229, 31%, 21%);
   --color-primary-dark: hsl(231, 69%, 60%);
   --color-primary-accent: hsl(0, 94%, 66%);
-  --divider-border: 1px solid var(--color-neutral);
+  --divider-border: 0.075rem solid var(--color-neutral);
 
   --site-max-width: 70rem;
   --site-content-max-width: 68.75rem;
@@ -29,8 +29,9 @@
   --regular-text-fs: var(--fs-300);
   --block-link-padding: 0.5rem;
   --site-links-gap: 1.75em;
-  --outline-width: 2px;
+  --outline-width: 0.125rem;
   --btn-border-radius: 0.25em;
+  --btn-border-width: 0.125rem;
   --btn-top-padding: 0.75em;
   --btn-left-padding: 1.15em;
 }
@@ -273,19 +274,19 @@ svg {
 
 .btn-dark {
   background-color: var(--color-primary-dark);
-  border: 2px solid var(--color-primary-dark);
+  border: var(--btn-border-width) solid var(--color-primary-dark);
   color: white;
 }
 
 .btn-light {
   background-color: var(--color-neutral-light);
-  border: 2px solid var(--color-neutral-light);
+  border: var(--btn-border-width) solid var(--color-neutral-light);
   color: var(--color-neutral-dark);
 }
 
 .btn-accent {
   background-color: var(--color-primary-accent);
-  border: 2px solid var(--color-primary-accent);
+  border: var(--btn-border-width) solid var(--color-primary-accent);
   color: white;
 }
 
@@ -295,9 +296,9 @@ svg {
 
 .cta-email-input:focus {
   outline-color: var(--color-primary-accent);
-  outline-offset: -2px;
+  outline-offset: calc(-1 * var(--outline-width));
   outline-style: solid;
-  outline-width: 2px;
+  outline-width: var(--outline-width);
 }
 
 @media (hover:hover) {
@@ -334,7 +335,7 @@ svg {
   }
 
   .btn-light:hover {
-    border: 2px solid black;
+    border: var(--btn-border-width) solid black;
     color: black;
   }
 
@@ -397,7 +398,7 @@ svg {
 
 .header-btn-login {
   background-color: transparent;
-  border: 2px solid white;
+  border: var(--btn-border-width) solid white;
   color: inherit;
   font-size: inherit;
   letter-spacing: inherit;
@@ -483,7 +484,7 @@ svg {
 
   .header-btn-login {
     background-color: var(--color-primary-accent);
-    border: 2px solid var(--color-primary-accent);
+    border: var(--btn-border-width) solid var(--color-primary-accent);
     margin: 0;
     padding: 0.75em 1.5em;
   }
