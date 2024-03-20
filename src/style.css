@@ -801,12 +801,12 @@ svg {
   opacity: 0.5;
 }
 
-.cta-email-input-container {
+.cta-email-container {
   background-color: var(--color-primary-accent);
   border-radius: var(--btn-border-radius);
 }
 
-.cta-invalid-email-msg {
+.cta-email-error-msg {
   color: white;
   font-size: var(--fs-50);
   font-style: italic;
@@ -815,9 +815,20 @@ svg {
   text-align: left;
 }
 
+.cta-email-input-container {
+  position: relative;
+}
+
+.cta-email-error-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
 @media screen and (min-width: 60em) {
   .cta-section {
-    --max-column-width: 40ch;
+    --max-column-width: 42ch;
   }
 
   .cta-form {
@@ -831,7 +842,7 @@ svg {
     margin-bottom: 2em;
   }
 
-  .cta-email-input-container {
+  .cta-email-container {
     flex-grow: 2;
   }
 
