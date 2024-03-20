@@ -773,7 +773,7 @@ svg {
 }
 
 .cta-intro {
-  font-size: var(--fs-100);
+  font-size: var(--fs-50);
   font-weight: var(--fw-semi-bold);
   letter-spacing: var(--letter-spaced-400);
   margin-bottom: 0.5em;
