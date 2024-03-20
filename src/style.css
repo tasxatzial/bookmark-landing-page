@@ -28,7 +28,7 @@
   --site-content-inline-padding: 1.5rem;
   --regular-text-fs: var(--fs-300);
   --block-link-padding: 0.5rem;
-  --site-links-gap: 1.75em;
+  --nav-site-links-gap: 1.75em;
   --outline-width: 0.125rem;
   --btn-border-radius: 0.25em;
   --btn-border-width: 0.125rem;
@@ -290,6 +290,12 @@ svg {
   color: white;
 }
 
+.link-btn {
+  display: inline-block;
+  text-decoration: none;
+  width: max-content;
+}
+
 /*------------------------------------*\
   #STATES
 \*------------------------------------*/
@@ -455,7 +461,7 @@ svg {
     flex-direction: row;
     flex-wrap: nowrap;
     font-size: var(--fs-100);
-    gap: calc(var(--site-links-gap) + var(--block-link-padding));
+    gap: calc(var(--nav-site-links-gap) + var(--block-link-padding));
     letter-spacing: var(--letter-spaced-200);
     opacity: 100%;
     padding: 0;
@@ -472,7 +478,7 @@ svg {
     color: var(--color-neutral-dark);
     display: flex;
     flex-direction: row;
-    gap: var(--site-links-gap);
+    gap: var(--nav-site-links-gap);
   }
   
   .header-site-link {
@@ -904,7 +910,7 @@ svg {
   }
 
   .footer-site-links {
-    gap: var(--site-links-gap);
+    gap: var(--nav-site-links-gap);
     margin: 0 3.5em 0;
   }
 }
