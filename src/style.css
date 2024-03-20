@@ -712,14 +712,8 @@ svg {
   #FAQ SECTION
 \*------------------------------------*/
 
-.faq-heading,
-.faq-intro-text {
+.faq-section {
   text-align: center;
-}
-
-.faq-more-btn {
-  display: block;
-  margin: 0 auto;
 }
 
 .faq-question-btn {
@@ -742,6 +736,7 @@ svg {
 
 .faq-accordion {
   margin-bottom: 3rem;
+  text-align: left;
 }
 
 .faq-accordion-panel:first-child {
