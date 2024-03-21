@@ -129,6 +129,10 @@ svg {
   width: 1.125em;
 }
 
+.cta-email-input-container > svg {
+  width: 1.25rem;
+}
+
 /*------------------------------------*\
   #BLOBS
 \*------------------------------------*/
@@ -822,7 +826,7 @@ svg {
 .cta-email-error-icon {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 0.6rem;
   transform: translateY(-50%);
 }
 
