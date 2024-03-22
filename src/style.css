@@ -17,11 +17,12 @@
   --line-height-400: 1.4;
   --line-height-600: 1.6;
   --color-neutral: hsl(224, 6%, 47%);
+  --color-neutral-faded: hsla(224, 6%, 47%, 0.5);
   --color-neutral-light: hsl(0, 0%, 95%);
   --color-neutral-dark: hsl(229, 31%, 21%);
   --color-primary-dark: hsl(231, 69%, 60%);
   --color-primary-accent: hsl(0, 94%, 66%);
-  --divider-border: 0.075rem solid var(--color-neutral);
+  --divider-border: 0.075rem solid var(--color-neutral-faded);
 
   --site-max-width: 70rem;
   --site-content-max-width: 68.75rem;
