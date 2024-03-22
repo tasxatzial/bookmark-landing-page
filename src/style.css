@@ -536,7 +536,7 @@ svg {
   text-align: center;
 }
 
-.hero-container {
+.hero-content {
   display: flex;
   flex-direction: column-reverse;
   gap: 2rem;
@@ -557,7 +557,7 @@ svg {
 }
 
 @media screen and (min-width: 60em) {
-  .hero-container {
+  .hero-content {
     align-items: center;
     flex-direction: row;
   }
@@ -638,17 +638,13 @@ svg {
   }
 
   .features-tabs {
+    --_max-column-width: 100%;
     border-bottom: var(--divider-border);
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-  }
-
-  .features-tablist {
-    --max-column-width: 100%;
-    max-width: 100%;
   }
 
   .feature-tab-btn {
@@ -667,7 +663,7 @@ svg {
   }
 
   .feature-panel-container:not([hidden]) {
-    --max-column-width: 38ch;
+    --_max-column-width: 38ch;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -854,8 +850,8 @@ svg {
 }
 
 @media screen and (min-width: 60em) {
-  .cta-section {
-    --max-column-width: 42ch;
+  .cta-content {
+    --_max-column-width: 42ch;
   }
 
   .cta-form {
