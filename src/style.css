@@ -168,13 +168,13 @@ svg {
 .blob-features::after {
   content: "";
   background-color: var(--color-primary-dark);
-  border-bottom-right-radius: 110px;
-  border-top-right-radius: 110px;
+  border-bottom-right-radius: 150px;
+  border-top-right-radius: 220px;
   position: absolute;
   z-index: -1;
   bottom: -15%;
   left: -200%;
-  right: 19%;
+  right: 22%;
   top: 17%;
 }
 
@@ -207,8 +207,10 @@ svg {
 }
 
 .top-lvl-section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  --_padding-bottom: var(--padding-bottom, 4rem);
+  --_padding-top: var(--padding-top, 4rem);
+  padding-top: var(--_padding-top);
+  padding-bottom: var(--_padding-bottom);
 }
 
 /*------------------------------------*\
@@ -564,7 +566,6 @@ svg {
     flex-grow: 1;
     margin-bottom: 0;
     margin-left: 0;
-    margin-right: -30px;
   }
 
   .hero-text-container {
@@ -632,6 +633,10 @@ svg {
 }
 
 @media screen and (min-width: 60em) {
+  .features-section {
+    --_padding-bottom: 8rem;
+  }
+
   .features-tabs {
     border-bottom: var(--divider-border);
     display: flex;
@@ -648,7 +653,7 @@ svg {
 
   .feature-tab-btn {
     --tab-btn-padding: 1.25em;
-    width: 21ch;
+    width: 22ch;
   }
 
   .feature-tab-heading,
@@ -671,7 +676,7 @@ svg {
   }
 
   .feature-img-container {
-    margin-bottom: 0;
+    margin: 0 auto;
   }
 }
 
