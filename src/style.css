@@ -161,9 +161,8 @@ svg {
 }
 
 .blob-features {
-  margin: 0 auto;
+  margin: 0 auto 5.5rem;
   position: relative;
-  width: fit-content;
 }
 
 .blob-features::after {
@@ -177,6 +176,13 @@ svg {
   left: -200%;
   right: 22%;
   top: 17%;
+}
+
+@media screen and (min-width: 60em) {
+  .blob-hero,
+  .blob-features {
+    margin: 0;
+  }
 }
 
 /*------------------------------------*\
@@ -628,11 +634,6 @@ svg {
   position: relative;
 }
 
-.feature-img-container > div {
-  margin: 0 auto;
-  position: relative;
-}
-
 @media screen and (min-width: 60em) {
   .features-section {
     --_padding-bottom: 8rem;
@@ -664,6 +665,7 @@ svg {
   }
 
   .feature-panel-container:not([hidden]) {
+    --_max-column-width: 100%;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -674,10 +676,6 @@ svg {
 
   .feature-panelText-container {
     --_max-column-width: 38ch;
-    margin: 0;
-  }
-
-  .feature-img-container {
     margin: 0;
   }
 }
