@@ -663,16 +663,21 @@ svg {
   }
 
   .feature-panel-container:not([hidden]) {
-    --_max-column-width: 38ch;
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 4rem;
+    gap: 6rem;
+    justify-content: center;
     text-align: left;
   }
 
+  .feature-panelText-container {
+    --_max-column-width: 38ch;
+    margin: 0;
+  }
+
   .feature-img-container {
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
