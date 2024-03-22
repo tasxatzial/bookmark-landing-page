@@ -308,11 +308,15 @@ svg {
   #STATES
 \*------------------------------------*/
 
-.cta-email-input:focus {
+:focus-visible {
   outline-color: var(--color-primary-accent);
-  outline-offset: calc(-1 * var(--outline-width));
+  outline-offset: 0.15rem;
   outline-style: solid;
   outline-width: var(--outline-width);
+}
+
+.cta-email-input:focus {
+  outline-offset: calc(-1 * var(--outline-width));
 }
 
 @media (hover:hover) {
