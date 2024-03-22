@@ -13,7 +13,7 @@ const toggleNavBtn = headerNav.querySelector('.toggle-nav-btn');
 const toggleNavBtnImg = toggleNavBtn.querySelector('svg');
 const toggleNavBtnIcon = toggleNavBtn.querySelector('use');
 const twitterLink = headerNav.querySelector("a[aria-label='twitter']");
-const mqList = window.matchMedia("(min-width: 45em)");
+const mqList = window.matchMedia("(min-width: 47em)");
 const headerNavLinks = headerNav.querySelector('.header-site-links');
 const ctaForm = document.querySelector('.cta-form');
 const ctaEmailInput = ctaForm.querySelector('[data-email]');

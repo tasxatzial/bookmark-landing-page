@@ -374,7 +374,7 @@ svg {
     color: var(--color-primary-accent);
   }
 
-  @media screen and (min-width: 45em) {
+  @media screen and (min-width: 47em) {
     .header-btn-login:hover {
       background-color: white;
     }
@@ -470,7 +470,7 @@ svg {
   padding: var(--block-link-padding);
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 47em) {
   .header-content {
     display: flex;
     height: 100%;
@@ -919,7 +919,7 @@ svg {
   padding: var(--block-link-padding);
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 47em) {
   .footer-content {
     padding-top: 1.5rem;
   }
