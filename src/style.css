@@ -141,6 +141,12 @@ svg {
   #BLOBS
 \*------------------------------------*/
 
+.blob-hero {
+  margin: 0 auto;
+  position: relative;
+  width: fit-content;
+}
+
 .blob-hero::after {
   content: "";
   background-color: var(--color-primary-dark);
@@ -148,8 +154,8 @@ svg {
   position: absolute;
   z-index: -1;
   bottom: 3%;
-  right: -10rem;
-  left: 16%;
+  right: -200%;
+  left: 14%;
   top: 19%;
 }
 
@@ -521,15 +527,17 @@ svg {
   text-align: center;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2rem;
+  justify-content: center;
+}
+
 .hero-img-container {
   margin-right: calc(-1 * var(--site-content-inline-padding));
   margin-left: calc(-1 * var(--site-content-inline-padding));
-  margin-bottom: 2rem;
   position: relative;
-}
-
-.hero-img {
-  margin: 0 auto;
 }
 
 .hero-btns {
@@ -542,19 +550,18 @@ svg {
 @media screen and (min-width: 60em) {
   .hero-container {
     align-items: center;
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 2rem;
-    justify-content: center;
+    flex-direction: row;
   }
 
   .hero-img-container {
+    flex-grow: 1;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: -30px;
   }
 
   .hero-text-container {
+    flex-grow: 1;
     text-align: left;
   }
 
