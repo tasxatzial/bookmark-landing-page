@@ -27,7 +27,6 @@
   --site-max-width: 70rem;
   --site-content-max-width: 68.75rem;
   --site-content-inline-padding: 1.5rem;
-  --regular-text-fs: var(--fs-300);
   --block-link-padding: 0.5rem;
   --nav-site-links-gap: 1.75em;
   --outline-width: 0.125rem;
@@ -111,6 +110,26 @@ svg {
 
 .hidden {
   display: none;
+}
+
+/*------------------------------------*\
+  #TEXT
+\*------------------------------------*/
+
+.regular-text,
+.card-min-browser {
+  color: var(--color-neutral);
+  font-weight: var(--fw-reg);
+  line-height: var(--line-height-600);
+  margin-bottom: 2em;
+}
+
+.regular-text {
+  font-size: var(--fs-300);
+}
+
+.card-min-browser {
+  font-size: var(--fs-200);
 }
 
 /*------------------------------------*\
@@ -223,14 +242,6 @@ svg {
 /*------------------------------------*\
   #HEADINGS
 \*------------------------------------*/
-
-.regular-text {
-  color: var(--color-neutral);
-  font-size: var(--regular-text-fs);
-  font-weight: var(--fw-reg);
-  line-height: var(--line-height-600);
-  margin-bottom: 2em;
-}
 
 .hero-heading {
   font-size: var(--fs-700);
