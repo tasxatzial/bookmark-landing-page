@@ -8,9 +8,9 @@
   --fs-400: 1.125rem;
   --fs-500: 1.3rem;
   --fs-600: 1.5rem;
-  --fs-650: 1.8rem;
   --fs-700: 1.9rem;
-  --fs-800: 2.6rem;
+  --fs-750: 2rem;
+  --fs-800: 2.8rem;
   --letter-spaced-100: 0.05em;
   --letter-spaced-200: 0.1em;
   --letter-spaced-400: 0.2em;
@@ -25,7 +25,7 @@
   --color-primary-accent: hsl(0, 94%, 66%);
   --divider-border: 0.075rem solid var(--color-neutral-faded);
 
-  --site-max-width: 70rem;
+  --site-max-width: 80rem;
   --site-content-max-width: 68.75rem;
   --site-content-inline-padding: 1.5rem;
   --block-link-padding: 0.5rem;
@@ -113,24 +113,12 @@ svg {
   display: none;
 }
 
-/*------------------------------------*\
-  #TEXT
-\*------------------------------------*/
-
-.regular-text,
-.card-min-browser {
+.regular-text {
   color: var(--color-neutral);
+  font-size: var(--fs-300);
   font-weight: var(--fw-reg);
   line-height: var(--line-height-600);
   margin-bottom: 2em;
-}
-
-.regular-text {
-  font-size: var(--fs-300);
-}
-
-.card-min-browser {
-  font-size: var(--fs-200);
 }
 
 /*------------------------------------*\
@@ -217,7 +205,7 @@ svg {
 }
 
 .section-column-container {
-  --_max-column-width: var(--max-column-width, 47ch);
+  --_max-column-width: var(--max-column-width, 53ch);
   margin: 0 auto;
   max-width: var(--_max-column-width);
 }
@@ -580,6 +568,14 @@ svg {
   gap: 2rem;
 }
 
+.card-min-browser {
+  color: var(--color-neutral);
+  font-size: var(--fs-200);
+  font-weight: var(--fw-reg);
+  line-height: var(--line-height-600);
+  margin-bottom: 2em;
+}
+
 /*------------------------------------*\
   #FAQ SECTION
 \*------------------------------------*/
@@ -833,9 +829,12 @@ svg {
 @media screen and (min-width: 60em) {
 
   /*------------------------------------*\
-  #TEXT
+  #GLOBAL
   \*------------------------------------*/
 
+  .regular-text {
+    font-size: var(--fs-400);
+  }
 
   /*------------------------------------*\
   #BLOBS
@@ -860,7 +859,7 @@ svg {
   .download-heading,
   .faq-heading,
   .cta-heading {
-    font-size: var(--fs-650);
+    font-size: var(--fs-750);
     line-height: var(--line-height-200);
     margin-bottom: 0.75em;
   }
@@ -921,6 +920,7 @@ svg {
 
   .feature-tab-btn {
     --tab-btn-padding: 1.25em;
+    font-size: var(--fs-400);
     width: 22ch;
   }
 
@@ -939,13 +939,13 @@ svg {
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 6rem;
+    gap: 7rem;
     justify-content: center;
     text-align: left;
   }
 
   .feature-panelText-container {
-    --_max-column-width: 38ch;
+    --_max-column-width: 42ch;
     margin: 0;
   }
 
@@ -969,6 +969,9 @@ svg {
   #FAQ SECTION
   \*------------------------------------*/
 
+  .faq-question-btn {
+    font-size: var(--fs-400);
+  }
 
   /*------------------------------------*\
   #CTA SECTION
