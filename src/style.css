@@ -989,6 +989,7 @@ svg {
   }
 
   .cta-intro {
+    font-size: var(--fs-100);
     margin-bottom: 2em;
   }
 
