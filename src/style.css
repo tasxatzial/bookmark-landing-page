@@ -140,6 +140,7 @@ svg {
 
 .faq-question-btn > svg {
   width: 1.125em;
+  flex-shrink: 0;
 }
 
 .cta-email-input-container > svg {
@@ -591,9 +592,11 @@ svg {
   color: var(--color-neutral-dark);
   display: inline-flex;
   font-size: var(--fs-300);
+  gap: 1em;
   justify-content: space-between;
   line-height: var(--line-height-400);
   padding: 1.25em 0;
+  text-align: left;
   width: 100%;
 }
 
