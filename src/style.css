@@ -743,6 +743,16 @@ svg {
 @media screen and (min-width: 47em) {
 
   /*------------------------------------*\
+  #STATES
+  \*------------------------------------*/
+
+  @media (hover:hover) {
+    .header-btn-login:hover {
+      background-color: white;
+    }
+  }
+
+  /*------------------------------------*\
   #HEADER
   \*------------------------------------*/
 
@@ -862,18 +872,6 @@ svg {
     font-size: var(--fs-750);
     line-height: var(--line-height-200);
     margin-bottom: 0.75em;
-  }
-
-  /*------------------------------------*\
-  #STATES
-  \*------------------------------------*/
-
-  @media (hover:hover) {
-    @media screen and (min-width: 47em) {
-      .header-btn-login:hover {
-        background-color: white;
-      }
-    }
   }
 
   /*------------------------------------*\
