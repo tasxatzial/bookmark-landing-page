@@ -83,11 +83,11 @@
             <p class="regular-text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
           </div>
           <div id="features-tablist" class="features-tablist" role="tablist" aria-labelledby="features-heading">
-            <div id="features-tabs" class="features-tabs section-column-container">
-              <h3 class="feature-tab-heading"><button id="features-tab1-btn" class="feature-tab-btn" role="tab" aria-selected="true" aria-controls="features-tabpanel1">Simple Bookmarking</button></h3>
-              <h3 class="feature-tab-heading"><button id="features-tab2-btn" class="feature-tab-btn" tabindex="-1" role="tab" aria-selected="false" aria-controls="features-tabpanel2">Speedy Searching</button></h3>
-              <h3 class="feature-tab-heading"><button id="features-tab3-btn" class="feature-tab-btn" tabindex="-1" role="tab" aria-selected="false" aria-controls="features-tabpanel3">Easy Sharing</button></h3>
-            </div>
+            <ul id="features-tabs" class="features-tabs section-column-container list" aria-label="features tablist.">
+              <li><h3 class="feature-tab-heading"><button id="features-tab1-btn" class="feature-tab-btn" role="tab" aria-selected="true" aria-controls="features-tabpanel1">Simple Bookmarking</button></h3></li>
+              <li><h3 class="feature-tab-heading"><button id="features-tab2-btn" class="feature-tab-btn" tabindex="-1" role="tab" aria-selected="false" aria-controls="features-tabpanel2">Speedy Searching</button></h3></li>
+              <li><h3 class="feature-tab-heading"><button id="features-tab3-btn" class="feature-tab-btn" tabindex="-1" role="tab" aria-selected="false" aria-controls="features-tabpanel3">Easy Sharing</button></h3></li>
+            </ul>
             <div id="features-tabpanel1" class="feature-panel-container section-column-container" role="tabpanel" aria-labelledby="features-tab1-btn">
               <div class="blob-features">
                 <img width="536" height="346" src="img/illustration-features-tab-1.svg" alt="" class="feature-main-img">
@@ -187,8 +187,8 @@
           <div class="section-column-container">
             <h2 id="faq-heading" class="faq-heading">Frequently Asked Questions</h2>
             <p class="regular-text faq-intro-text">Here are some of our <abbr title="Frequently Asked Questions">FAQs</abbr>. If you have any other questions you'd like answered please feel free to email us.</p>
-            <div id="faq-accordion" class="faq-accordion">
-              <div class="faq-accordion-panel">
+            <ul id="faq-accordion" class="faq-accordion list">
+              <li class="faq-accordion-panel">
                 <h3 id="faq-panel1-heading">
                   <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-panel1-answer">
                     <span>What is Bookmark?</span>
@@ -203,8 +203,8 @@
                     <p class="regular-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
                   </div>
                 </div>
-              </div>
-              <div class="faq-accordion-panel">
+              </li>
+              <li class="faq-accordion-panel">
                 <h3 id="faq-panel2-heading">
                   <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-panel2-answer">
                     <span>How can I request a new browser?</span>
@@ -219,8 +219,8 @@
                     <p class="regular-text">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
                   </div>                
                 </div>
-              </div>
-              <div class="faq-accordion-panel">
+              </li>
+              <li class="faq-accordion-panel">
                 <h3 id="faq-panel3-heading">
                   <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-panel3-answer">
                     <span>Is there a mobile app?</span>
@@ -235,8 +235,8 @@
                     <p class="regular-text">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
                   </div>
                 </div>
-              </div>
-              <div class="faq-accordion-panel">
+              </li>
+              <li class="faq-accordion-panel">
                 <h3 id="faq-panel4-heading">
                   <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-panel4-answer">
                     <span>What about other Chromium browsers?</span>
@@ -251,8 +251,8 @@
                     <p class="regular-text">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
                   </div>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
             <a href="#" class="btn btn-dark faq-more-btn link-btn">More Info</a>
           </div>
         </div>
