@@ -22,7 +22,7 @@ The implementation isn't an exact match of the depicted design, partly because I
 * The images in the second section did not have the same dimensions, leading to alignment and positioning issues. Therefore, I decided to edit them so that they all have uniform dimensions. This change made the implementation much easier and more consistent.
 * There is no section associated with the 'pricing' navigation link, so it currently does nothing.
 * The image in the first section is aligned just like the rest of the elements along the same vertical axis.
-* The font size of the intro text in the cta section has been slightly increased in the desktop version.
+* Due to various spacing adjustments, the overall height of the page has been decreased.
 
 Other changes:
 
