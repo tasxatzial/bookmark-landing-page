@@ -8,7 +8,7 @@ const accordionContainer = document.getElementById('faq-accordion');
 const accordion = new Accordion(accordionContainer);
 
 const spritePath = new URL('../img/sprites.svg', import.meta.url).pathname;
-const headerNav = document.querySelector("nav[aria-label='primary']");
+const headerNav = document.querySelector("nav[aria-label='header primary']");
 const toggleNavBtn = headerNav.querySelector('.toggle-nav-btn');
 const toggleNavBtnImg = toggleNavBtn.querySelector('svg');
 const toggleNavBtnIcon = toggleNavBtn.querySelector('use');
