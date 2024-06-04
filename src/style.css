@@ -895,7 +895,6 @@ svg {
   \*------------------------------------*/
 
   .hero-content {
-    align-items: center;
     flex-direction: row;
   }
 
@@ -905,7 +904,8 @@ svg {
   }
 
   .hero-text-container {
-    flex-shrink: 1.5;
+    --max-column-width: 50ch;
+    flex-shrink: 2;
     text-align: left;
   }
 
