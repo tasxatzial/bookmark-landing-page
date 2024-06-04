@@ -22,7 +22,7 @@ The implementation isn't an exact match of the depicted design, mainly because I
 * The images in the second section did not have the same dimensions, leading to alignment and positioning issues. Therefore, I decided to edit them so that they all have uniform dimensions. This change made the implementation much easier and more consistent.
 * There is no section associated with the 'pricing' navigation link, so it currently does nothing.
 * The image in the hero section is aligned just like the rest of the elements along the same vertical axis. It's not perfectly aligned though since the image also has an almost invisible shadow.
-* Both columns in the hero section are top-aligned instead of center-aligned, creating a more consistent look and feel.
+* Both columns in the hero section are top-aligned, creating a more consistent look and feel.
 * The hamburger icon size has been increased because it was too small.
 * Due to various spacing adjustments, the overall height of the page has been decreased.
 
