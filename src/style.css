@@ -36,7 +36,8 @@
   --btn-left-padding: 1.13em;
   --header-padding: 1.5rem;
   --body-background-color: hsl(0, 0%, 95%);
-  --divider-border: 0.075rem solid hsl(231, 8%, 84%);
+  --divider-line: 0.075rem solid hsl(231, 8%, 84%);
+  --divider-line-faded: 0.075rem solid hsl(231, 8%, 84%, 0.3);
 }
 
 * {
@@ -432,11 +433,11 @@ svg {
 }
 
 .header-site-links > li {
-  border-bottom: var(--divider-border);
+  border-bottom: var(--divider-line-faded);
 }
 
 .header-site-links > li:first-child {
-  border-top: var(--divider-border);
+  border-top: var(--divider-line-faded);
 }
 
 .header-site-link {
@@ -524,11 +525,11 @@ svg {
 }
 
 .features-tabs > li {
-  border-bottom: var(--divider-border);
+  border-bottom: var(--divider-line);
 }
 
 .features-tabs > li:first-child {
-  border-top: var(--divider-border);
+  border-top: var(--divider-line);
 }
 
 .feature-main-img {
@@ -623,11 +624,11 @@ svg {
 }
 
 .faq-accordion-panel:first-child {
-  border-top: var(--divider-border);
+  border-top: var(--divider-line);
 }
 
 .faq-accordion-panel {
-  border-bottom: var(--divider-border);
+  border-bottom: var(--divider-line);
 }
 
 .faq-answer-content {
@@ -924,7 +925,7 @@ svg {
 
   .features-tabs {
     --_max-column-width: 100%;
-    border-bottom: var(--divider-border);
+    border-bottom: var(--divider-line);
     display: flex;
     flex-direction: row;
     margin-left: auto;
