@@ -24,6 +24,7 @@ The implementation isn't an exact match of the depicted design, mainly because I
 * The image in the hero section is aligned just like the rest of the elements along the same vertical axis. It's not perfectly aligned though since the image also has an almost invisible shadow.
 * Both columns in the hero section are top-aligned, creating a more consistent look and feel.
 * The hamburger icon size has been increased because it was too small.
+* The light button in the hero section does not blend as much with the light background, making it more visually distinguishable.
 * Due to various spacing adjustments, the overall height of the page has been decreased.
 
 Other changes:
