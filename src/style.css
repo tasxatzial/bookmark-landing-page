@@ -18,12 +18,11 @@
   --line-height-400: 1.4;
   --line-height-600: 1.6;
   --color-neutral: hsl(224, 6%, 47%);
-  --color-neutral-faded: hsla(224, 6%, 47%, 0.35);
-  --color-neutral-light: hsl(0, 0%, 95%);
+  --color-neutral-light: hsl(233, 15%, 90%);
+  --color-neutral-lighter: hsl(0, 0%, 95%);
   --color-neutral-dark: hsl(229, 31%, 21%);
   --color-primary-dark: hsl(231, 69%, 60%);
   --color-primary-accent: hsl(0, 94%, 66%);
-  --divider-border: 0.075rem solid var(--color-neutral-faded);
 
   --site-max-width: 80rem;
   --site-content-max-width: 68.75rem;
@@ -36,6 +35,8 @@
   --btn-top-padding: 0.68em;
   --btn-left-padding: 1.13em;
   --header-padding: 1.5rem;
+  --body-background-color: hsl(0, 0%, 95%);
+  --divider-border: 0.075rem solid hsl(231, 8%, 84%);
 }
 
 * {
@@ -72,7 +73,7 @@ body.js-no-scroll {
 \*------------------------------------*/
 
 body {
-  background-color: var(--color-neutral-light);
+  background-color: var(--body-background-color);
   font-family: 'Rubik', sans-serif;
   margin: 0;
   min-height: 100vh;
@@ -298,7 +299,7 @@ svg {
 }
 
 .btn-light {
-  background-color: var(--color-neutral-light);
+  background-color: var(--color-neutral-lighter);
   border: var(--btn-border-width) solid var(--color-neutral-light);
   color: var(--color-neutral-dark);
 }
