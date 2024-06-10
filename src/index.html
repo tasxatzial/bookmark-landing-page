@@ -82,12 +82,12 @@
             <h2 id="features-heading" class="features-heading">Features</h2>
             <p class="regular-text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
           </div>
-          <div id="features-tablist" class="features-tablist" role="tablist" aria-labelledby="features-heading">
-            <ul id="features-tabs" class="features-tabs section-column-container unstyled-list" aria-label="features tablist.">
-              <li><h3 class="feature-tab-heading"><button id="features-tab1-btn" class="feature-tab-btn" role="tab" aria-selected="true" aria-controls="features-tabpanel1">Simple Bookmarking</button></h3></li>
-              <li><h3 class="feature-tab-heading"><button id="features-tab2-btn" class="feature-tab-btn" tabindex="-1" role="tab" aria-selected="false" aria-controls="features-tabpanel2">Speedy Searching</button></h3></li>
-              <li><h3 class="feature-tab-heading"><button id="features-tab3-btn" class="feature-tab-btn" tabindex="-1" role="tab" aria-selected="false" aria-controls="features-tabpanel3">Easy Sharing</button></h3></li>
-            </ul>
+          <div class="js-features-tablist-container" aria-labelledby="features-heading">
+            <div class="features-tabs section-column-container unstyled-list" role="tablist">
+              <button id="features-tab1-btn" class="feature-tab-btn" role="tab" aria-selected="true" aria-controls="features-tabpanel1">Simple Bookmarking</button>
+              <button id="features-tab2-btn" class="feature-tab-btn" role="tab" tabindex="-1" aria-selected="false" aria-controls="features-tabpanel2">Speedy Searching</button>
+              <button id="features-tab3-btn" class="feature-tab-btn" role="tab" tabindex="-1" aria-selected="false" aria-controls="features-tabpanel3">Easy Sharing</button>
+            </div>
             <div id="features-tabpanel1" class="feature-panel-container section-column-container" role="tabpanel" aria-labelledby="features-tab1-btn">
               <div class="blob-features">
                 <img width="536" height="346" src="img/illustration-features-tab-1.svg" alt="" class="feature-main-img">
@@ -187,7 +187,7 @@
           <div class="section-column-container">
             <h2 id="faq-heading" class="faq-heading">Frequently Asked Questions</h2>
             <p class="regular-text faq-intro-text">Here are some of our <abbr title="Frequently Asked Questions">FAQ<span class="sr-only">&nbsp;</span>s</abbr>. If you have any other questions you'd like answered please feel free to email us.</p>
-            <ul id="faq-accordion" class="faq-accordion unstyled-list">
+            <ul class="faq-accordion js-faq-accordion unstyled-list">
               <li class="faq-accordion-panel">
                 <h3 id="faq-panel1-heading">
                   <button class="faq-question-btn" aria-expanded="false" aria-controls="faq-panel1-answer">

@@ -515,20 +515,24 @@ svg {
   content: "";
   display: block;
   height: 0.25em;
-  left: calc(var(--tab-btn-padding) + 5%);
+  left: 50%;
+  margin: auto;
   position: absolute;
-  right: calc(var(--tab-btn-padding) + 5%);
+  transform: translateX(-50%);
+  width: min(17ch, 100%);
 }
 
 .features-tabs {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 4rem;
 }
 
-.features-tabs > li {
+.features-tabs > button {
   border-bottom: var(--divider-line);
 }
 
-.features-tabs > li:first-child {
+.features-tabs > button:first-child {
   border-top: var(--divider-line);
 }
 
@@ -933,8 +937,8 @@ svg {
     width: fit-content;
   }
 
-  .features-tabs > li,
-  .features-tabs > li:first-child {
+  .features-tabs > button,
+  .features-tabs > button:first-child {
     border: none;
   }
 
@@ -946,7 +950,8 @@ svg {
 
   .feature-tab-btn[aria-selected="true"]::after {
     left: 0;
-    right: 0;
+    transform: translateX(0);
+    width: 100%;
   }
 
   .feature-panel-container:not([hidden]) {

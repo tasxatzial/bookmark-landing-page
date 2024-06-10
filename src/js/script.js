@@ -1,10 +1,10 @@
 import Tablist from "./Tablist.js";
 import Accordion from "./Accordion.js";
 
-const tabsContainer = document.getElementById('features-tabs');
+const tabsContainer = document.querySelector('.js-features-tablist-container');
 const tablist = new Tablist(tabsContainer);
 
-const accordionContainer = document.getElementById('faq-accordion');
+const accordionContainer = document.querySelector('.js-faq-accordion');
 const accordion = new Accordion(accordionContainer);
 
 const spritePath = new URL('../img/sprites.svg', import.meta.url).pathname;
