@@ -82,8 +82,9 @@
             <h2 id="features-heading" class="features-heading">Features</h2>
             <p class="regular-text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
           </div>
-          <div class="js-features-tablist-container" aria-labelledby="features-heading">
-            <div class="features-tabs section-column-container unstyled-list" role="tablist">
+          <div class="js-features-tablist-container">
+            <p id="tablist-instructions" class="sr-only">tabbed interface. press the left and right arrow keys to switch between tabs. press the tab key to navigate to the corresponding tab panel.</p>
+            <div class="features-tabs section-column-container unstyled-list" role="tablist"  aria-describedby="tablist-instructions">
               <button id="features-tab1-btn" class="feature-tab-btn" role="tab" aria-selected="true" aria-controls="features-tabpanel1">Simple Bookmarking</button>
               <button id="features-tab2-btn" class="feature-tab-btn" role="tab" tabindex="-1" aria-selected="false" aria-controls="features-tabpanel2">Speedy Searching</button>
               <button id="features-tab3-btn" class="feature-tab-btn" role="tab" tabindex="-1" aria-selected="false" aria-controls="features-tabpanel3">Easy Sharing</button>

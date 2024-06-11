@@ -332,6 +332,14 @@ svg {
   outline-offset: calc(-1 * var(--outline-width));
 }
 
+.features-tabs > .feature-tab-btn:focus-visible {
+  outline-offset: -2px;
+}
+
+.features-tabs:focus-within:has(button:focus-visible) {
+  background-color: linen;
+}
+
 @media (hover:hover) {
   button:hover,
   a:hover {
