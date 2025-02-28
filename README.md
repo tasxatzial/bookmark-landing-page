@@ -4,6 +4,8 @@ A landing page for a bookmarking app.
 
 This is a challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158).
 
+[Live version](https://tasxatzial.github.io/bookmark-landing-page/src/index.html)
+
 ## Features
 
 * Tabs pattern (tablist) with automatic activation.
